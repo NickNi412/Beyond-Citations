@@ -1,0 +1,11 @@
+{
+  "healthver": {
+    "eligible_claims_k5": 278,
+    "pilot_claims": 20,
+    "full_claims": 200
+  },
+  "climatefever": {
+    "eligible_claims_k3": 145,
+    "claims": 145
+  }
+}

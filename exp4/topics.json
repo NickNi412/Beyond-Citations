@@ -1,0 +1,8 @@
+[
+ {"id": "vitd", "question": "Does vitamin D supplementation reduce the risk of acute respiratory infections in adults?"},
+ {"id": "creatine", "question": "Is long-term creatine supplementation safe for kidney function in healthy adults?"},
+ {"id": "lfp", "question": "Do lithium iron phosphate (LFP) home storage batteries last more than 6000 full cycles?"},
+ {"id": "fasting", "question": "Does intermittent fasting produce more weight loss than continuous calorie restriction in adults?"},
+ {"id": "heatpump", "question": "Do domestic heat pumps reduce heating-related CO2 emissions compared with gas boilers in the UK?"},
+ {"id": "melatonin", "question": "Does melatonin improve sleep quality in adults with chronic insomnia?"}
+]
