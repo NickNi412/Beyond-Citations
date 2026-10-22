@@ -1,0 +1,4 @@
+
+qwen/qwen3-235b-a22b-thinking-2507
+  direct_ex          valid 71/72  bottleneck 66/72  certs 66/72
+      shared_same 18/18  shared_para 12/18  separate_diss 18/18  separate_sim 18/18

@@ -1,0 +1,560 @@
+{
+ "anthropic/claude-haiku-4.5 | aware": {
+  "curves": {
+   "independent": [
+    {
+     "k": 1,
+     "mean": 43.56666666666667,
+     "ci": [
+      37.408125,
+      49.800625
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 57.65,
+     "ci": [
+      51.391666666666666,
+      62.90937499999999
+     ]
+    }
+   ],
+   "same_source_distinct": [
+    {
+     "k": 1,
+     "mean": 43.56666666666667,
+     "ci": [
+      37.408125,
+      49.800625
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 51.025,
+     "ci": [
+      44.69104166666667,
+      56.87791666666665
+     ]
+    }
+   ],
+   "same_source_verbatim": [
+    {
+     "k": 1,
+     "mean": 43.56666666666667,
+     "ci": [
+      37.408125,
+      49.800625
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 31.758333333333333,
+     "ci": [
+      27.008125,
+      36.575625
+     ]
+    }
+   ]
+  },
+  "contrasts": {
+   "inflation_at_kmax": {
+    "independent": 14.083333333333329,
+    "same_source_distinct": 7.458333333333329,
+    "same_source_verbatim": -11.808333333333337
+   },
+   "discount_ratio_same_source_distinct": 0.47041420118343213,
+   "paired_same_source_distinct": {
+    "n_claims": 60,
+    "mean_diff": 6.625,
+    "wilcoxon_p": 0.00023795229646252528
+   },
+   "discount_ratio_same_source_verbatim": 1.838461538461539,
+   "paired_same_source_verbatim": {
+    "n_claims": 60,
+    "mean_diff": 25.891666666666666,
+    "wilcoxon_p": 2.2718885944278786e-10
+   }
+  },
+  "count_accuracy": {
+   "single": 0.9916666666666667,
+   "independent": 0.975,
+   "same_source_distinct": 0.9833333333333333,
+   "same_source_verbatim": 1.0
+  },
+  "axioms": {
+   "D_violation_same_source_verbatim": {
+    "n_claims": 60,
+    "mean_diff": -11.808333333333334,
+    "wilcoxon_p": 1.073216471008686e-07
+   },
+   "S_gap": {
+    "n_claims": 60,
+    "mean_diff": 6.625,
+    "wilcoxon_p": 0.00023795229646252528,
+    "share_of_independent_gain": 0.47041420118343213
+   }
+  }
+ },
+ "anthropic/claude-haiku-4.5 | plain": {
+  "curves": {
+   "independent": [
+    {
+     "k": 1,
+     "mean": 35.11666666666667,
+     "ci": [
+      29.825,
+      40.825625
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 55.13333333333333,
+     "ci": [
+      49.0075,
+      60.700208333333336
+     ]
+    }
+   ],
+   "same_source_distinct": [
+    {
+     "k": 1,
+     "mean": 35.11666666666667,
+     "ci": [
+      29.825,
+      40.825625
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 48.75,
+     "ci": [
+      42.358333333333334,
+      54.51854166666666
+     ]
+    }
+   ],
+   "same_source_verbatim": [
+    {
+     "k": 1,
+     "mean": 35.11666666666667,
+     "ci": [
+      29.825,
+      40.825625
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 26.408333333333335,
+     "ci": [
+      22.599583333333335,
+      30.65104166666666
+     ]
+    }
+   ]
+  },
+  "contrasts": {
+   "inflation_at_kmax": {
+    "independent": 20.016666666666666,
+    "same_source_distinct": 13.633333333333333,
+    "same_source_verbatim": -8.708333333333332
+   },
+   "discount_ratio_same_source_distinct": 0.3189009159034138,
+   "paired_same_source_distinct": {
+    "n_claims": 60,
+    "mean_diff": 6.383333333333334,
+    "wilcoxon_p": 0.001068459521596145
+   },
+   "discount_ratio_same_source_verbatim": 1.435054121565362,
+   "paired_same_source_verbatim": {
+    "n_claims": 60,
+    "mean_diff": 28.725,
+    "wilcoxon_p": 1.0690684741970962e-10
+   }
+  },
+  "axioms": {
+   "D_violation_same_source_verbatim": {
+    "n_claims": 60,
+    "mean_diff": -8.708333333333334,
+    "wilcoxon_p": 1.811651101365629e-05
+   },
+   "S_gap": {
+    "n_claims": 60,
+    "mean_diff": 6.383333333333334,
+    "wilcoxon_p": 0.001068459521596145,
+    "share_of_independent_gain": 0.31890091590341385
+   }
+  }
+ },
+ "openai/gpt-4.1 | aware": {
+  "curves": {
+   "independent": [
+    {
+     "k": 1,
+     "mean": 43.458333333333336,
+     "ci": [
+      37.0,
+      49.62604166666666
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 65.25,
+     "ci": [
+      59.041666666666664,
+      70.33333333333333
+     ]
+    }
+   ],
+   "same_source_distinct": [
+    {
+     "k": 1,
+     "mean": 43.458333333333336,
+     "ci": [
+      37.0,
+      49.62604166666666
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 52.541666666666664,
+     "ci": [
+      46.916666666666664,
+      57.625
+     ]
+    }
+   ],
+   "same_source_verbatim": [
+    {
+     "k": 1,
+     "mean": 43.458333333333336,
+     "ci": [
+      37.0,
+      49.62604166666666
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 34.166666666666664,
+     "ci": [
+      29.123958333333334,
+      39.208333333333336
+     ]
+    }
+   ]
+  },
+  "contrasts": {
+   "inflation_at_kmax": {
+    "independent": 21.791666666666664,
+    "same_source_distinct": 9.083333333333329,
+    "same_source_verbatim": -9.291666666666671
+   },
+   "discount_ratio_same_source_distinct": 0.5831739961759084,
+   "paired_same_source_distinct": {
+    "n_claims": 60,
+    "mean_diff": 12.708333333333334,
+    "wilcoxon_p": 5.46481591878148e-09
+   },
+   "discount_ratio_same_source_verbatim": 1.4263862332695987,
+   "paired_same_source_verbatim": {
+    "n_claims": 60,
+    "mean_diff": 31.083333333333332,
+    "wilcoxon_p": 5.6821671606654945e-11
+   }
+  },
+  "count_accuracy": {
+   "single": 1.0,
+   "independent": 0.95,
+   "same_source_distinct": 0.9833333333333333,
+   "same_source_verbatim": 1.0
+  },
+  "axioms": {
+   "D_violation_same_source_verbatim": {
+    "n_claims": 60,
+    "mean_diff": -9.291666666666666,
+    "wilcoxon_p": 7.693214105562592e-06
+   },
+   "S_gap": {
+    "n_claims": 60,
+    "mean_diff": 12.708333333333334,
+    "wilcoxon_p": 5.46481591878148e-09,
+    "share_of_independent_gain": 0.5831739961759083
+   }
+  }
+ },
+ "openai/gpt-4.1 | plain": {
+  "curves": {
+   "independent": [
+    {
+     "k": 1,
+     "mean": 43.75,
+     "ci": [
+      37.583333333333336,
+      49.75104166666666
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 64.75,
+     "ci": [
+      58.375,
+      70.04166666666667
+     ]
+    }
+   ],
+   "same_source_distinct": [
+    {
+     "k": 1,
+     "mean": 43.75,
+     "ci": [
+      37.583333333333336,
+      49.75104166666666
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 60.041666666666664,
+     "ci": [
+      53.458333333333336,
+      66.12604166666667
+     ]
+    }
+   ],
+   "same_source_verbatim": [
+    {
+     "k": 1,
+     "mean": 43.75,
+     "ci": [
+      37.583333333333336,
+      49.75104166666666
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 28.625,
+     "ci": [
+      23.498958333333334,
+      34.333333333333336
+     ]
+    }
+   ]
+  },
+  "contrasts": {
+   "inflation_at_kmax": {
+    "independent": 21.0,
+    "same_source_distinct": 16.291666666666664,
+    "same_source_verbatim": -15.125
+   },
+   "discount_ratio_same_source_distinct": 0.22420634920634933,
+   "paired_same_source_distinct": {
+    "n_claims": 60,
+    "mean_diff": 4.708333333333333,
+    "wilcoxon_p": 0.011399531116641815
+   },
+   "discount_ratio_same_source_verbatim": 1.7202380952380953,
+   "paired_same_source_verbatim": {
+    "n_claims": 60,
+    "mean_diff": 36.125,
+    "wilcoxon_p": 3.1834388215018364e-11
+   }
+  },
+  "axioms": {
+   "D_violation_same_source_verbatim": {
+    "n_claims": 60,
+    "mean_diff": -15.125,
+    "wilcoxon_p": 2.019998109276745e-08
+   },
+   "S_gap": {
+    "n_claims": 60,
+    "mean_diff": 4.708333333333333,
+    "wilcoxon_p": 0.011399531116641815,
+    "share_of_independent_gain": 0.2242063492063492
+   }
+  }
+ },
+ "qwen/qwen3-235b-a22b-2507 | aware": {
+  "curves": {
+   "independent": [
+    {
+     "k": 1,
+     "mean": 51.041666666666664,
+     "ci": [
+      43.37291666666667,
+      58.25
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 67.83333333333333,
+     "ci": [
+      60.791666666666664,
+      73.91770833333334
+     ]
+    }
+   ],
+   "same_source_distinct": [
+    {
+     "k": 1,
+     "mean": 51.041666666666664,
+     "ci": [
+      43.37291666666667,
+      58.25
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 63.041666666666664,
+     "ci": [
+      56.20729166666667,
+      69.08333333333333
+     ]
+    }
+   ],
+   "same_source_verbatim": [
+    {
+     "k": 1,
+     "mean": 51.041666666666664,
+     "ci": [
+      43.37291666666667,
+      58.25
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 52.291666666666664,
+     "ci": [
+      44.291666666666664,
+      59.875
+     ]
+    }
+   ]
+  },
+  "contrasts": {
+   "inflation_at_kmax": {
+    "independent": 16.791666666666664,
+    "same_source_distinct": 12.0,
+    "same_source_verbatim": 1.25
+   },
+   "discount_ratio_same_source_distinct": 0.28535980148883366,
+   "paired_same_source_distinct": {
+    "n_claims": 60,
+    "mean_diff": 4.791666666666667,
+    "wilcoxon_p": 0.004795900737002294
+   },
+   "discount_ratio_same_source_verbatim": 0.9255583126550868,
+   "paired_same_source_verbatim": {
+    "n_claims": 60,
+    "mean_diff": 15.541666666666666,
+    "wilcoxon_p": 1.2323528692458486e-06
+   }
+  },
+  "count_accuracy": {
+   "single": 0.9333333333333333,
+   "independent": 0.9083333333333333,
+   "same_source_distinct": 1.0,
+   "same_source_verbatim": 1.0
+  },
+  "axioms": {
+   "D_violation_same_source_verbatim": {
+    "n_claims": 60,
+    "mean_diff": 1.25,
+    "wilcoxon_p": 0.7054857610790499
+   },
+   "S_gap": {
+    "n_claims": 60,
+    "mean_diff": 4.791666666666667,
+    "wilcoxon_p": 0.004795900737002294,
+    "share_of_independent_gain": 0.28535980148883383
+   }
+  }
+ },
+ "qwen/qwen3-235b-a22b-2507 | plain": {
+  "curves": {
+   "independent": [
+    {
+     "k": 1,
+     "mean": 50.333333333333336,
+     "ci": [
+      42.28958333333333,
+      57.5
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 69.83333333333333,
+     "ci": [
+      63.37291666666667,
+      75.50208333333332
+     ]
+    }
+   ],
+   "same_source_distinct": [
+    {
+     "k": 1,
+     "mean": 50.333333333333336,
+     "ci": [
+      42.28958333333333,
+      57.5
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 64.54166666666667,
+     "ci": [
+      57.83229166666667,
+      70.58333333333333
+     ]
+    }
+   ],
+   "same_source_verbatim": [
+    {
+     "k": 1,
+     "mean": 50.333333333333336,
+     "ci": [
+      42.28958333333333,
+      57.5
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 47.791666666666664,
+     "ci": [
+      40.248958333333334,
+      55.41770833333332
+     ]
+    }
+   ]
+  },
+  "contrasts": {
+   "inflation_at_kmax": {
+    "independent": 19.499999999999993,
+    "same_source_distinct": 14.208333333333336,
+    "same_source_verbatim": -2.5416666666666714
+   },
+   "discount_ratio_same_source_distinct": 0.27136752136752096,
+   "paired_same_source_distinct": {
+    "n_claims": 60,
+    "mean_diff": 5.291666666666667,
+    "wilcoxon_p": 0.0007511288705002865
+   },
+   "discount_ratio_same_source_verbatim": 1.1303418803418805,
+   "paired_same_source_verbatim": {
+    "n_claims": 60,
+    "mean_diff": 22.041666666666668,
+    "wilcoxon_p": 9.788718827796108e-09
+   }
+  },
+  "axioms": {
+   "D_violation_same_source_verbatim": {
+    "n_claims": 60,
+    "mean_diff": -2.5416666666666665,
+    "wilcoxon_p": 0.5145661890279147
+   },
+   "S_gap": {
+    "n_claims": 60,
+    "mean_diff": 5.291666666666667,
+    "wilcoxon_p": 0.0007511288705002865,
+    "share_of_independent_gain": 0.27136752136752146
+   }
+  }
+ }
+}

@@ -1,0 +1,53 @@
+rows 3600, parse failures 0
+
+anthropic/claude-haiku-4.5 | aware
+  inflation at kmax: {'independent': 16.5, 'same_source_distinct': 15.1, 'same_source_verbatim': -7.2, 'same_source_paraphrase': -4.0}
+  discount ratio same_source_distinct: 0.08  (indep - same = 1.4, n=60, p=0.12184035780643498)
+  discount ratio same_source_verbatim: 1.44  (indep - same = 23.7, n=60, p=3.377373505176275e-10)
+  D_violation_same_source_verbatim: mean diff -7.2 (n=60, p=0.00018393298275406388)
+  D_violation_same_source_paraphrase: mean diff -4.0 (n=60, p=0.009368404561291444)
+  S_gap: mean diff 1.4 (n=60, p=0.12184035780643498), share of independent gain 0.08
+  independent-study count == tau: {'single': 1.0, 'independent': 0.9416666666666667, 'same_source_distinct': 0.9416666666666667, 'same_source_verbatim': 1.0, 'same_source_paraphrase': 1.0}
+
+anthropic/claude-haiku-4.5 | plain
+  inflation at kmax: {'independent': 17.0, 'same_source_distinct': 16.6, 'same_source_verbatim': -10.6, 'same_source_paraphrase': -7.5}
+  discount ratio same_source_distinct: 0.02  (indep - same = 0.4, n=60, p=0.32694627799210385)
+  discount ratio same_source_verbatim: 1.62  (indep - same = 27.6, n=60, p=8.128240047988672e-11)
+  D_violation_same_source_verbatim: mean diff -10.6 (n=60, p=1.0848480297005004e-08)
+  D_violation_same_source_paraphrase: mean diff -7.5 (n=60, p=3.934055387840425e-05)
+  S_gap: mean diff 0.4 (n=60, p=0.32694627799210385), share of independent gain 0.02
+
+openai/gpt-4.1 | aware
+  inflation at kmax: {'independent': 23.5, 'same_source_distinct': 11.1, 'same_source_verbatim': -10.8, 'same_source_paraphrase': -6.8}
+  discount ratio same_source_distinct: 0.53  (indep - same = 12.4, n=60, p=4.327993252805554e-09)
+  discount ratio same_source_verbatim: 1.46  (indep - same = 34.2, n=60, p=2.342432688284544e-11)
+  D_violation_same_source_verbatim: mean diff -10.8 (n=60, p=1.0669627743841944e-07)
+  D_violation_same_source_paraphrase: mean diff -6.8 (n=60, p=0.00011026631002903317)
+  S_gap: mean diff 12.4 (n=60, p=4.327993252805554e-09), share of independent gain 0.53
+  independent-study count == tau: {'single': 0.9833333333333333, 'independent': 0.6333333333333333, 'same_source_distinct': 0.9333333333333333, 'same_source_verbatim': 1.0, 'same_source_paraphrase': 1.0}
+
+openai/gpt-4.1 | plain
+  inflation at kmax: {'independent': 21.5, 'same_source_distinct': 17.8, 'same_source_verbatim': -18.8, 'same_source_paraphrase': -8.3}
+  discount ratio same_source_distinct: 0.17  (indep - same = 3.7, n=60, p=0.0026012229757916773)
+  discount ratio same_source_verbatim: 1.87  (indep - same = 40.3, n=60, p=3.400930578219425e-11)
+  D_violation_same_source_verbatim: mean diff -18.8 (n=60, p=2.1339112762154174e-10)
+  D_violation_same_source_paraphrase: mean diff -8.3 (n=60, p=3.1842903117799207e-06)
+  S_gap: mean diff 3.7 (n=60, p=0.0026012229757916773), share of independent gain 0.17
+
+qwen/qwen3-235b-a22b-2507 | aware
+  inflation at kmax: {'independent': 21.8, 'same_source_distinct': 19.8, 'same_source_verbatim': 4.2, 'same_source_paraphrase': 10.5}
+  discount ratio same_source_distinct: 0.09  (indep - same = 2.0, n=60, p=0.07365123228178388)
+  discount ratio same_source_verbatim: 0.8  (indep - same = 17.5, n=60, p=4.804417421967872e-07)
+  D_violation_same_source_verbatim: mean diff 4.2 (n=60, p=0.026516016725737206)
+  D_violation_same_source_paraphrase: mean diff 10.5 (n=60, p=1.477739841100973e-06)
+  S_gap: mean diff 2.0 (n=60, p=0.07365123228178388), share of independent gain 0.09
+  independent-study count == tau: {'single': 0.95, 'independent': 0.625, 'same_source_distinct': 1.0, 'same_source_verbatim': 1.0, 'same_source_paraphrase': 0.975}
+
+qwen/qwen3-235b-a22b-2507 | plain
+  inflation at kmax: {'independent': 23.8, 'same_source_distinct': 22.3, 'same_source_verbatim': 5.8, 'same_source_paraphrase': 17.9}
+  discount ratio same_source_distinct: 0.06  (indep - same = 1.5, n=60, p=0.5603026456051255)
+  discount ratio same_source_verbatim: 0.76  (indep - same = 18.0, n=60, p=7.845448184067575e-07)
+  D_violation_same_source_verbatim: mean diff 5.8 (n=60, p=0.002852653048517376)
+  D_violation_same_source_paraphrase: mean diff 17.9 (n=60, p=5.588668452347955e-10)
+  S_gap: mean diff 1.5 (n=60, p=0.5603026456051255), share of independent gain 0.06
+figure -> results/night_hv.png

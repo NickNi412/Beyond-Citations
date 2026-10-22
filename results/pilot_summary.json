@@ -1,0 +1,899 @@
+{
+ "anthropic/claude-haiku-4.5 | aware": {
+  "curves": {
+   "independent": [
+    {
+     "k": 1,
+     "mean": 41.1,
+     "ci": [
+      31.75,
+      50.25249999999998
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 54.2,
+     "ci": [
+      44.775,
+      63.225
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 64.725,
+     "ci": [
+      56.073125000000005,
+      72.350625
+     ]
+    }
+   ],
+   "same_source_distinct": [
+    {
+     "k": 1,
+     "mean": 41.1,
+     "ci": [
+      31.75,
+      50.25249999999998
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 51.925,
+     "ci": [
+      42.698750000000004,
+      60.201249999999995
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 54.65,
+     "ci": [
+      46.423125,
+      62.55187499999999
+     ]
+    }
+   ],
+   "same_source_verbatim": [
+    {
+     "k": 1,
+     "mean": 41.1,
+     "ci": [
+      31.75,
+      50.25249999999998
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 31.25,
+     "ci": [
+      23.75,
+      39.5
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 29.75,
+     "ci": [
+      23.25,
+      36.5
+     ]
+    }
+   ],
+   "same_source_paraphrase": [
+    {
+     "k": 1,
+     "mean": 41.1,
+     "ci": [
+      31.75,
+      50.25249999999998
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 33.25,
+     "ci": [
+      25.0,
+      42.0
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 34.0,
+     "ci": [
+      26.75,
+      42.5
+     ]
+    }
+   ]
+  },
+  "contrasts": {
+   "inflation_at_kmax": {
+    "independent": 23.624999999999993,
+    "same_source_distinct": 13.549999999999997,
+    "same_source_verbatim": -11.350000000000001,
+    "same_source_paraphrase": -7.100000000000001
+   },
+   "discount_ratio_same_source_distinct": 0.4264550264550264,
+   "paired_same_source_distinct": {
+    "n_claims": 20,
+    "mean_diff": 10.075,
+    "wilcoxon_p": 0.0006451158437926242
+   },
+   "discount_ratio_same_source_verbatim": 1.4804232804232806,
+   "paired_same_source_verbatim": {
+    "n_claims": 20,
+    "mean_diff": 34.975,
+    "wilcoxon_p": 0.0001308020996998329
+   }
+  },
+  "count_accuracy": {
+   "single": 1.0,
+   "independent": 1.0,
+   "same_source_distinct": 1.0,
+   "same_source_verbatim": 0.975,
+   "same_source_paraphrase": 0.975
+  },
+  "axioms": {
+   "D_violation_same_source_verbatim": {
+    "n_claims": 20,
+    "mean_diff": -11.35,
+    "wilcoxon_p": 0.0014009385472406133
+   },
+   "D_violation_same_source_paraphrase": {
+    "n_claims": 20,
+    "mean_diff": -7.1,
+    "wilcoxon_p": 0.00811077823040372
+   },
+   "S_gap": {
+    "n_claims": 20,
+    "mean_diff": 10.075,
+    "wilcoxon_p": 0.0006451158437926242,
+    "share_of_independent_gain": 0.42645502645502653
+   }
+  }
+ },
+ "anthropic/claude-haiku-4.5 | plain": {
+  "curves": {
+   "independent": [
+    {
+     "k": 1,
+     "mean": 36.425,
+     "ci": [
+      27.925,
+      45.425
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 53.525,
+     "ci": [
+      42.948750000000004,
+      63.35124999999999
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 60.375,
+     "ci": [
+      50.8,
+      69.0
+     ]
+    }
+   ],
+   "same_source_distinct": [
+    {
+     "k": 1,
+     "mean": 36.425,
+     "ci": [
+      27.925,
+      45.425
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 52.675,
+     "ci": [
+      42.549375,
+      62.25
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 55.45,
+     "ci": [
+      46.349375,
+      63.725
+     ]
+    }
+   ],
+   "same_source_verbatim": [
+    {
+     "k": 1,
+     "mean": 36.425,
+     "ci": [
+      27.925,
+      45.425
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 25.75,
+     "ci": [
+      19.75,
+      33.0
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 25.25,
+     "ci": [
+      19.99375,
+      30.5
+     ]
+    }
+   ],
+   "same_source_paraphrase": [
+    {
+     "k": 1,
+     "mean": 36.425,
+     "ci": [
+      27.925,
+      45.425
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 29.85,
+     "ci": [
+      22.0,
+      38.45
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 31.25,
+     "ci": [
+      23.5,
+      40.006249999999966
+     ]
+    }
+   ]
+  },
+  "contrasts": {
+   "inflation_at_kmax": {
+    "independent": 23.950000000000003,
+    "same_source_distinct": 19.025000000000006,
+    "same_source_verbatim": -11.174999999999997,
+    "same_source_paraphrase": -5.174999999999997
+   },
+   "discount_ratio_same_source_distinct": 0.20563674321503117,
+   "paired_same_source_distinct": {
+    "n_claims": 20,
+    "mean_diff": 4.925,
+    "wilcoxon_p": 0.00884707036445663
+   },
+   "discount_ratio_same_source_verbatim": 1.4665970772442587,
+   "paired_same_source_verbatim": {
+    "n_claims": 20,
+    "mean_diff": 35.125,
+    "wilcoxon_p": 8.670731863656777e-05
+   }
+  },
+  "axioms": {
+   "D_violation_same_source_verbatim": {
+    "n_claims": 20,
+    "mean_diff": -11.175,
+    "wilcoxon_p": 0.0003770722816799183
+   },
+   "D_violation_same_source_paraphrase": {
+    "n_claims": 20,
+    "mean_diff": -5.175,
+    "wilcoxon_p": 0.03568878061261237
+   },
+   "S_gap": {
+    "n_claims": 20,
+    "mean_diff": 4.925,
+    "wilcoxon_p": 0.00884707036445663,
+    "share_of_independent_gain": 0.20563674321503128
+   }
+  }
+ },
+ "openai/gpt-4.1 | aware": {
+  "curves": {
+   "independent": [
+    {
+     "k": 1,
+     "mean": 40.0,
+     "ci": [
+      29.246875,
+      51.0
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 58.875,
+     "ci": [
+      47.371875,
+      69.0
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 65.125,
+     "ci": [
+      55.875,
+      73.125
+     ]
+    }
+   ],
+   "same_source_distinct": [
+    {
+     "k": 1,
+     "mean": 40.0,
+     "ci": [
+      29.246875,
+      51.0
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 49.125,
+     "ci": [
+      39.125,
+      58.125
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 55.875,
+     "ci": [
+      47.625,
+      63.25312499999998
+     ]
+    }
+   ],
+   "same_source_verbatim": [
+    {
+     "k": 1,
+     "mean": 40.0,
+     "ci": [
+      29.246875,
+      51.0
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 29.125,
+     "ci": [
+      21.75,
+      36.875
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 28.0,
+     "ci": [
+      21.121875,
+      35.375
+     ]
+    }
+   ],
+   "same_source_paraphrase": [
+    {
+     "k": 1,
+     "mean": 40.0,
+     "ci": [
+      29.246875,
+      51.0
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 37.5,
+     "ci": [
+      28.371875,
+      47.625
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 32.875,
+     "ci": [
+      24.25,
+      42.25312499999998
+     ]
+    }
+   ]
+  },
+  "contrasts": {
+   "inflation_at_kmax": {
+    "independent": 25.125,
+    "same_source_distinct": 15.875,
+    "same_source_verbatim": -12.0,
+    "same_source_paraphrase": -7.125
+   },
+   "discount_ratio_same_source_distinct": 0.3681592039800995,
+   "paired_same_source_distinct": {
+    "n_claims": 20,
+    "mean_diff": 9.25,
+    "wilcoxon_p": 0.00012337136179017006
+   },
+   "discount_ratio_same_source_verbatim": 1.4776119402985075,
+   "paired_same_source_verbatim": {
+    "n_claims": 20,
+    "mean_diff": 37.125,
+    "wilcoxon_p": 8.683086254706037e-05
+   }
+  },
+  "count_accuracy": {
+   "single": 0.95,
+   "independent": 0.8125,
+   "same_source_distinct": 1.0,
+   "same_source_verbatim": 1.0,
+   "same_source_paraphrase": 1.0
+  },
+  "axioms": {
+   "D_violation_same_source_verbatim": {
+    "n_claims": 20,
+    "mean_diff": -12.0,
+    "wilcoxon_p": 0.0007890746152576843
+   },
+   "D_violation_same_source_paraphrase": {
+    "n_claims": 20,
+    "mean_diff": -7.125,
+    "wilcoxon_p": 0.0012327909633825288
+   },
+   "S_gap": {
+    "n_claims": 20,
+    "mean_diff": 9.25,
+    "wilcoxon_p": 0.00012337136179017006,
+    "share_of_independent_gain": 0.3681592039800995
+   }
+  }
+ },
+ "openai/gpt-4.1 | plain": {
+  "curves": {
+   "independent": [
+    {
+     "k": 1,
+     "mean": 42.625,
+     "ci": [
+      31.246875,
+      53.25
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 58.0,
+     "ci": [
+      46.375,
+      68.63124999999997
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 66.375,
+     "ci": [
+      57.25,
+      74.12812499999998
+     ]
+    }
+   ],
+   "same_source_distinct": [
+    {
+     "k": 1,
+     "mean": 42.625,
+     "ci": [
+      31.246875,
+      53.25
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 57.0,
+     "ci": [
+      45.75,
+      67.25
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 66.0,
+     "ci": [
+      57.125,
+      73.5
+     ]
+    }
+   ],
+   "same_source_verbatim": [
+    {
+     "k": 1,
+     "mean": 42.625,
+     "ci": [
+      31.246875,
+      53.25
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 25.375,
+     "ci": [
+      18.125,
+      33.125
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 22.625,
+     "ci": [
+      15.625,
+      30.875
+     ]
+    }
+   ],
+   "same_source_paraphrase": [
+    {
+     "k": 1,
+     "mean": 42.625,
+     "ci": [
+      31.246875,
+      53.25
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 35.875,
+     "ci": [
+      25.625,
+      46.37812499999998
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 33.75,
+     "ci": [
+      24.125,
+      44.0
+     ]
+    }
+   ]
+  },
+  "contrasts": {
+   "inflation_at_kmax": {
+    "independent": 23.75,
+    "same_source_distinct": 23.375,
+    "same_source_verbatim": -20.0,
+    "same_source_paraphrase": -8.875
+   },
+   "discount_ratio_same_source_distinct": 0.015789473684210527,
+   "paired_same_source_distinct": {
+    "n_claims": 20,
+    "mean_diff": 0.375,
+    "wilcoxon_p": 0.4648992086003193
+   },
+   "discount_ratio_same_source_verbatim": 1.8421052631578947,
+   "paired_same_source_verbatim": {
+    "n_claims": 20,
+    "mean_diff": 43.75,
+    "wilcoxon_p": 8.584625213760736e-05
+   }
+  },
+  "axioms": {
+   "D_violation_same_source_verbatim": {
+    "n_claims": 20,
+    "mean_diff": -20.0,
+    "wilcoxon_p": 0.00018865046456449614
+   },
+   "D_violation_same_source_paraphrase": {
+    "n_claims": 20,
+    "mean_diff": -8.875,
+    "wilcoxon_p": 0.017098244396518195
+   },
+   "S_gap": {
+    "n_claims": 20,
+    "mean_diff": 0.375,
+    "wilcoxon_p": 0.4648992086003193,
+    "share_of_independent_gain": 0.015789473684210527
+   }
+  }
+ },
+ "qwen/qwen3-235b-a22b-2507 | aware": {
+  "curves": {
+   "independent": [
+    {
+     "k": 1,
+     "mean": 50.0,
+     "ci": [
+      38.875,
+      60.75
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 61.5,
+     "ci": [
+      51.5,
+      71.12812499999998
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 71.125,
+     "ci": [
+      63.371875,
+      78.00312499999998
+     ]
+    }
+   ],
+   "same_source_distinct": [
+    {
+     "k": 1,
+     "mean": 50.0,
+     "ci": [
+      38.875,
+      60.75
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 62.25,
+     "ci": [
+      51.25,
+      71.75
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 69.75,
+     "ci": [
+      61.75,
+      76.875
+     ]
+    }
+   ],
+   "same_source_verbatim": [
+    {
+     "k": 1,
+     "mean": 50.0,
+     "ci": [
+      38.875,
+      60.75
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 46.5,
+     "ci": [
+      35.25,
+      57.256249999999966
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 49.375,
+     "ci": [
+      38.0,
+      60.0
+     ]
+    }
+   ],
+   "same_source_paraphrase": [
+    {
+     "k": 1,
+     "mean": 50.0,
+     "ci": [
+      38.875,
+      60.75
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 50.125,
+     "ci": [
+      38.0,
+      61.25
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 51.625,
+     "ci": [
+      38.121875,
+      63.50312499999998
+     ]
+    }
+   ]
+  },
+  "contrasts": {
+   "inflation_at_kmax": {
+    "independent": 21.125,
+    "same_source_distinct": 19.75,
+    "same_source_verbatim": -0.625,
+    "same_source_paraphrase": 1.625
+   },
+   "discount_ratio_same_source_distinct": 0.0650887573964497,
+   "paired_same_source_distinct": {
+    "n_claims": 20,
+    "mean_diff": 1.375,
+    "wilcoxon_p": 0.6455830189572318
+   },
+   "discount_ratio_same_source_verbatim": 1.029585798816568,
+   "paired_same_source_verbatim": {
+    "n_claims": 20,
+    "mean_diff": 21.75,
+    "wilcoxon_p": 0.0002850872775535425
+   }
+  },
+  "count_accuracy": {
+   "single": 0.95,
+   "independent": 0.7625,
+   "same_source_distinct": 0.975,
+   "same_source_verbatim": 0.975,
+   "same_source_paraphrase": 0.95
+  },
+  "axioms": {
+   "D_violation_same_source_verbatim": {
+    "n_claims": 20,
+    "mean_diff": -0.625,
+    "wilcoxon_p": 0.7482863400162802
+   },
+   "D_violation_same_source_paraphrase": {
+    "n_claims": 20,
+    "mean_diff": 1.625,
+    "wilcoxon_p": 0.5929800980174267
+   },
+   "S_gap": {
+    "n_claims": 20,
+    "mean_diff": 1.375,
+    "wilcoxon_p": 0.6455830189572318,
+    "share_of_independent_gain": 0.0650887573964497
+   }
+  }
+ },
+ "qwen/qwen3-235b-a22b-2507 | plain": {
+  "curves": {
+   "independent": [
+    {
+     "k": 1,
+     "mean": 46.75,
+     "ci": [
+      35.371875,
+      57.881249999999966
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 64.0,
+     "ci": [
+      53.5,
+      73.62812499999998
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 72.625,
+     "ci": [
+      64.875,
+      79.75
+     ]
+    }
+   ],
+   "same_source_distinct": [
+    {
+     "k": 1,
+     "mean": 46.75,
+     "ci": [
+      35.371875,
+      57.881249999999966
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 65.375,
+     "ci": [
+      54.496875,
+      74.50312499999998
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 71.125,
+     "ci": [
+      62.5,
+      78.625
+     ]
+    }
+   ],
+   "same_source_verbatim": [
+    {
+     "k": 1,
+     "mean": 46.75,
+     "ci": [
+      35.371875,
+      57.881249999999966
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 45.375,
+     "ci": [
+      33.75,
+      56.75
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 50.25,
+     "ci": [
+      36.99375,
+      63.0
+     ]
+    }
+   ],
+   "same_source_paraphrase": [
+    {
+     "k": 1,
+     "mean": 46.75,
+     "ci": [
+      35.371875,
+      57.881249999999966
+     ]
+    },
+    {
+     "k": 3,
+     "mean": 52.125,
+     "ci": [
+      38.5,
+      65.25
+     ]
+    },
+    {
+     "k": 5,
+     "mean": 56.75,
+     "ci": [
+      43.246875,
+      69.00312499999998
+     ]
+    }
+   ]
+  },
+  "contrasts": {
+   "inflation_at_kmax": {
+    "independent": 25.875,
+    "same_source_distinct": 24.375,
+    "same_source_verbatim": 3.5,
+    "same_source_paraphrase": 10.0
+   },
+   "discount_ratio_same_source_distinct": 0.057971014492753624,
+   "paired_same_source_distinct": {
+    "n_claims": 20,
+    "mean_diff": 1.5,
+    "wilcoxon_p": 0.3854311066121775
+   },
+   "discount_ratio_same_source_verbatim": 0.8647342995169082,
+   "paired_same_source_verbatim": {
+    "n_claims": 20,
+    "mean_diff": 22.375,
+    "wilcoxon_p": 0.0007638501149640318
+   }
+  },
+  "axioms": {
+   "D_violation_same_source_verbatim": {
+    "n_claims": 20,
+    "mean_diff": 3.5,
+    "wilcoxon_p": 0.17443739643454736
+   },
+   "D_violation_same_source_paraphrase": {
+    "n_claims": 20,
+    "mean_diff": 10.0,
+    "wilcoxon_p": 0.005374526238407947
+   },
+   "S_gap": {
+    "n_claims": 20,
+    "mean_diff": 1.5,
+    "wilcoxon_p": 0.3854311066121775,
+    "share_of_independent_gain": 0.057971014492753624
+   }
+  }
+ }
+}

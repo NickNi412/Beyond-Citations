@@ -1,0 +1,338 @@
+{
+ "anthropic/claude-haiku-4.5 | plain": {
+  "reports": 6,
+  "parse_fail": 0,
+  "grade_missing": 0,
+  "mean_checks": 7.2,
+  "bottlenecks": 3,
+  "covered": 3
+ },
+ "anthropic/claude-haiku-4.5 | strong": {
+  "reports": 6,
+  "parse_fail": 0,
+  "grade_missing": 0,
+  "mean_checks": 7.5,
+  "bottlenecks": 3,
+  "covered": 3,
+  "flagged": 3,
+  "enough_given": "3/3",
+  "enough_contains_all_bottlenecks": "3/3",
+  "tolerance_exact": "3/6",
+  "tolerance_over": 0,
+  "tolerance_under": 3,
+  "tolerance_pairs": [
+   [
+    3,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    1,
+    1
+   ]
+  ]
+ },
+ "anthropic/claude-opus-5.5 | plain": {
+  "reports": 6,
+  "parse_fail": 0,
+  "grade_missing": 0,
+  "mean_checks": 8.7,
+  "bottlenecks": 11,
+  "covered": 9
+ },
+ "anthropic/claude-opus-5.5 | strong": {
+  "reports": 6,
+  "parse_fail": 0,
+  "grade_missing": 0,
+  "mean_checks": 6.3,
+  "bottlenecks": 11,
+  "covered": 10,
+  "flagged": 1,
+  "enough_given": "5/5",
+  "enough_contains_all_bottlenecks": "2/5",
+  "tolerance_exact": "3/6",
+  "tolerance_over": 2,
+  "tolerance_under": 1,
+  "tolerance_pairs": [
+   [
+    4,
+    4
+   ],
+   [
+    3,
+    3
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    3,
+    2
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    3,
+    2
+   ]
+  ]
+ },
+ "google/gemini-3.1-pro-preview | plain": {
+  "reports": 6,
+  "parse_fail": 0,
+  "grade_missing": 0,
+  "mean_checks": 3.8,
+  "bottlenecks": 14,
+  "covered": 7
+ },
+ "google/gemini-3.1-pro-preview | strong": {
+  "reports": 6,
+  "parse_fail": 0,
+  "grade_missing": 0,
+  "mean_checks": 3.8,
+  "bottlenecks": 14,
+  "covered": 9,
+  "flagged": 0,
+  "enough_given": "5/5",
+  "enough_contains_all_bottlenecks": "0/5",
+  "tolerance_exact": "2/6",
+  "tolerance_over": 4,
+  "tolerance_under": 0,
+  "tolerance_pairs": [
+   [
+    4,
+    4
+   ],
+   [
+    4,
+    4
+   ],
+   [
+    3,
+    2
+   ],
+   [
+    1,
+    0
+   ],
+   [
+    7,
+    2
+   ],
+   [
+    2,
+    0
+   ]
+  ]
+ },
+ "openai/gpt-4.1 | plain": {
+  "reports": 6,
+  "parse_fail": 0,
+  "grade_missing": 0,
+  "mean_checks": 5.7,
+  "bottlenecks": 20,
+  "covered": 16
+ },
+ "openai/gpt-4.1 | strong": {
+  "reports": 6,
+  "parse_fail": 0,
+  "grade_missing": 0,
+  "mean_checks": 4.3,
+  "bottlenecks": 20,
+  "covered": 14,
+  "flagged": 9,
+  "enough_given": "6/6",
+  "enough_contains_all_bottlenecks": "1/6",
+  "tolerance_exact": "3/6",
+  "tolerance_over": 2,
+  "tolerance_under": 1,
+  "tolerance_pairs": [
+   [
+    4,
+    4
+   ],
+   [
+    4,
+    4
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    2,
+    2
+   ],
+   [
+    2,
+    0
+   ]
+  ]
+ },
+ "openai/gpt-6.1-sol | plain": {
+  "reports": 6,
+  "parse_fail": 0,
+  "grade_missing": 0,
+  "mean_checks": 8.2,
+  "bottlenecks": 10,
+  "covered": 10
+ },
+ "openai/gpt-6.1-sol | strong": {
+  "reports": 6,
+  "parse_fail": 0,
+  "grade_missing": 0,
+  "mean_checks": 6.3,
+  "bottlenecks": 10,
+  "covered": 10,
+  "flagged": 1,
+  "enough_given": "4/4",
+  "enough_contains_all_bottlenecks": "4/4",
+  "tolerance_exact": "1/6",
+  "tolerance_over": 4,
+  "tolerance_under": 1,
+  "tolerance_pairs": [
+   [
+    4,
+    4
+   ],
+   [
+    4,
+    3
+   ],
+   [
+    4,
+    3
+   ],
+   [
+    4,
+    1
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    2,
+    1
+   ]
+  ]
+ },
+ "qwen/qwen3-235b-a22b-2507 | plain": {
+  "reports": 6,
+  "parse_fail": 0,
+  "grade_missing": 0,
+  "mean_checks": 5.2,
+  "bottlenecks": 6,
+  "covered": 2
+ },
+ "qwen/qwen3-235b-a22b-2507 | strong": {
+  "reports": 6,
+  "parse_fail": 0,
+  "grade_missing": 0,
+  "mean_checks": 5.7,
+  "bottlenecks": 6,
+  "covered": 2,
+  "flagged": 2,
+  "enough_given": "5/5",
+  "enough_contains_all_bottlenecks": "1/5",
+  "tolerance_exact": "0/6",
+  "tolerance_over": 1,
+  "tolerance_under": 5,
+  "tolerance_pairs": [
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    3
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    3
+   ]
+  ]
+ },
+ "qwen/qwen3-235b-a22b-thinking-2507 | plain": {
+  "reports": 6,
+  "parse_fail": 0,
+  "grade_missing": 0,
+  "mean_checks": 5.2,
+  "bottlenecks": 16,
+  "covered": 8
+ },
+ "qwen/qwen3-235b-a22b-thinking-2507 | strong": {
+  "reports": 6,
+  "parse_fail": 0,
+  "grade_missing": 0,
+  "mean_checks": 4.7,
+  "bottlenecks": 16,
+  "covered": 8,
+  "flagged": 3,
+  "enough_given": "6/6",
+  "enough_contains_all_bottlenecks": "1/6",
+  "tolerance_exact": "0/6",
+  "tolerance_over": 6,
+  "tolerance_under": 0,
+  "tolerance_pairs": [
+   [
+    3,
+    1
+   ],
+   [
+    4,
+    1
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    2,
+    1
+   ],
+   [
+    4,
+    3
+   ],
+   [
+    1,
+    0
+   ]
+  ]
+ }
+}

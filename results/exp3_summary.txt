@@ -1,0 +1,42 @@
+
+anthropic/claude-haiku-4.5  parse failures: direct 2, extract 0
+  direct   n=70  bottleneck 0.94  certs 0.17
+    shared_same    bottleneck 1.00  certs 0.53
+    shared_para    bottleneck 0.76  certs 0.18
+    separate_diss  bottleneck 1.00  certs 0.00
+    separate_sim   bottleneck 1.00  certs 0.00
+  extract  n=72  bottleneck 0.76  certs 0.69  sharing 0.69
+    shared_same    bottleneck 1.00  certs 0.94  sharing 0.94
+    shared_para    bottleneck 0.61  certs 0.39  sharing 0.39
+    separate_diss  bottleneck 0.50  certs 0.50  sharing 0.50
+    separate_sim   bottleneck 0.94  certs 0.94  sharing 0.94
+  paired bottleneck: extract-only right 0, direct-only right 13, McNemar p=0.00024 (n=70)
+  paired certs: extract-only right 38, direct-only right 1, McNemar p=1.5e-10 (n=70)
+
+openai/gpt-4.1  parse failures: direct 0, extract 0
+  direct   n=72  bottleneck 0.93  certs 0.00
+    shared_same    bottleneck 0.89  certs 0.00
+    shared_para    bottleneck 0.83  certs 0.00
+    separate_diss  bottleneck 1.00  certs 0.00
+    separate_sim   bottleneck 1.00  certs 0.00
+  extract  n=72  bottleneck 0.94  certs 0.94  sharing 0.94
+    shared_same    bottleneck 1.00  certs 1.00  sharing 1.00
+    shared_para    bottleneck 0.78  certs 0.78  sharing 0.78
+    separate_diss  bottleneck 1.00  certs 1.00  sharing 1.00
+    separate_sim   bottleneck 1.00  certs 1.00  sharing 1.00
+  paired bottleneck: extract-only right 2, direct-only right 1, McNemar p=1 (n=72)
+  paired certs: extract-only right 68, direct-only right 0, McNemar p=6.8e-21 (n=72)
+
+qwen/qwen3-235b-a22b-2507  parse failures: direct 0, extract 0
+  direct   n=72  bottleneck 0.56  certs 0.14
+    shared_same    bottleneck 0.06  certs 0.06
+    shared_para    bottleneck 0.17  certs 0.11
+    separate_diss  bottleneck 1.00  certs 0.22
+    separate_sim   bottleneck 1.00  certs 0.17
+  extract  n=72  bottleneck 0.92  certs 0.92  sharing 0.92
+    shared_same    bottleneck 1.00  certs 1.00  sharing 1.00
+    shared_para    bottleneck 0.67  certs 0.67  sharing 0.67
+    separate_diss  bottleneck 1.00  certs 1.00  sharing 1.00
+    separate_sim   bottleneck 1.00  certs 1.00  sharing 1.00
+  paired bottleneck: extract-only right 27, direct-only right 1, McNemar p=2.2e-07 (n=72)
+  paired certs: extract-only right 57, direct-only right 1, McNemar p=4.1e-16 (n=72)

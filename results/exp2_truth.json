@@ -1,0 +1,21 @@
+{
+ "n_theories": 500,
+ "tau_distribution": {
+  "1": 288,
+  "2": 199,
+  "3": 13
+ },
+ "share_votes_ge3_but_tau1": 0.46,
+ "share_of_tau1_with_votes_ge3": 0.7986111111111112,
+ "share_pagr_no_single_point_but_tau1": 0.302,
+ "share_passage_level_tau_overstates": 0.53,
+ "share_tau_gt_nu": 0.042,
+ "spearman_votes_tau": 0.32241024665259305,
+ "spearman_passages_tau": 0.34096459483441866,
+ "discordant_pairs_votes_vs_tau": 0.3056988723257651,
+ "median_votes_by_tau": {
+  "1": 5.0,
+  "2": 8.0,
+  "3": 10.0
+ }
+}

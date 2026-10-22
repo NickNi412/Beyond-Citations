@@ -1,0 +1,122 @@
+{
+ "count": 9,
+ "citation_graph_size": 535585096,
+ "lock_new_sources": false,
+ "sources": [
+  {
+   "source": "pubmed",
+   "display_name": "PubMed",
+   "description": "Biomedical and life-science literature indexed by PubMed.",
+   "default": true,
+   "enabled": true,
+   "new": false,
+   "paper_count": 41091740,
+   "earliest_date": "1781-01-01",
+   "latest_date": "2026-10-21",
+   "papers_with_embeddings": 29289190
+  },
+  {
+   "source": "arxiv",
+   "display_name": "arXiv",
+   "description": "Physics, math, CS, and quantitative-science preprints on arXiv.",
+   "default": true,
+   "enabled": true,
+   "new": false,
+   "paper_count": 4969857,
+   "earliest_date": "1986-04-25",
+   "latest_date": "2026-10-20",
+   "papers_with_embeddings": 3066643
+  },
+  {
+   "source": "biorxiv",
+   "display_name": "bioRxiv",
+   "description": "Biology preprints on bioRxiv.",
+   "default": true,
+   "enabled": true,
+   "new": false,
+   "paper_count": 485911,
+   "earliest_date": "2013-11-07",
+   "latest_date": "2026-10-21",
+   "papers_with_embeddings": 351027
+  },
+  {
+   "source": "medrxiv",
+   "display_name": "medRxiv",
+   "description": "Health-sciences preprints on medRxiv.",
+   "default": true,
+   "enabled": true,
+   "new": false,
+   "paper_count": 112817,
+   "earliest_date": "2019-06-25",
+   "latest_date": "2026-10-20",
+   "papers_with_embeddings": 90154
+  },
+  {
+   "source": "psyarxiv",
+   "display_name": "PsyArXiv",
+   "description": "Psychology preprints on PsyArXiv.",
+   "default": true,
+   "enabled": true,
+   "new": false,
+   "paper_count": 61639,
+   "earliest_date": "2016-08-15",
+   "latest_date": "2026-10-21",
+   "papers_with_embeddings": 52958
+  },
+  {
+   "source": "chemrxiv",
+   "display_name": "ChemRxiv",
+   "description": "Chemistry preprints on ChemRxiv.",
+   "default": true,
+   "enabled": true,
+   "new": false,
+   "paper_count": 57390,
+   "earliest_date": "2017-08-15",
+   "latest_date": "2026-10-21",
+   "papers_with_embeddings": 44778
+  },
+  {
+   "source": "socarxiv",
+   "display_name": "SocArXiv",
+   "description": "Social-science preprints on SocArXiv.",
+   "default": true,
+   "enabled": true,
+   "new": false,
+   "paper_count": 25405,
+   "earliest_date": "2016-07-13",
+   "latest_date": "2026-10-21",
+   "papers_with_embeddings": 22969
+  },
+  {
+   "source": "eartharxiv",
+   "display_name": "EarthArXiv",
+   "description": "Earth-science preprints on EarthArXiv.",
+   "default": true,
+   "enabled": true,
+   "new": false,
+   "paper_count": 7844,
+   "earliest_date": "2017-10-23",
+   "latest_date": "2026-10-20",
+   "papers_with_embeddings": 7714
+  },
+  {
+   "source": "hub",
+   "display_name": "Valency Hub",
+   "description": "Publications shared on Valency Hub.",
+   "default": true,
+   "enabled": true,
+   "new": true,
+   "paper_count": 778,
+   "earliest_date": "2026-09-21",
+   "latest_date": "2026-10-19",
+   "papers_with_embeddings": 727
+  }
+ ],
+ "_meta": {
+  "request_id": "8b1111e264d9423984c757ef99dd81a2",
+  "tool": "list_sources",
+  "duration_ms": 49,
+  "server_version": "0.4.1",
+  "db_duration_ms": 48
+ }
+}

@@ -1,0 +1,54 @@
+
+anthropic/claude-haiku-4.5
+  direct             valid 66/72  bottleneck 63/72  certs 13/72
+      shared_same 9/18  shared_para 3/18  separate_diss 0/18  separate_sim 1/18
+  direct_ex          valid 72/72  bottleneck 68/72  certs 25/72
+      shared_same 13/18  shared_para 10/18  separate_diss 0/18  separate_sim 2/18
+  extract            valid 72/72  bottleneck 65/72  certs 60/72  sharing 60/72  added-common-premise 0
+      shared_same 17/18  shared_para 7/18  separate_diss 18/18  separate_sim 18/18
+  ext_model:model    valid 72/72  bottleneck 66/72  certs 20/72
+      shared_same 9/18  shared_para 4/18  separate_diss 2/18  separate_sim 5/18
+  ext_model:program  valid 72/72  bottleneck 66/72  certs 66/72  sharing 66/72  added-common-premise 0
+      shared_same 18/18  shared_para 12/18  separate_diss 18/18  separate_sim 18/18
+  extract vs direct [bottleneck]: n=72  extract-only 5, direct-only 3, McNemar p=0.73; diff +0.03 (family bootstrap 95% CI -0.06..+0.12); families 2 vs 2, sign p=1
+  extract vs direct [certs]: n=72  extract-only 48, direct-only 1, McNemar p=1.8e-13; diff +0.65 (family bootstrap 95% CI +0.57..+0.74); families 18 vs 0, sign p=7.6e-06
+  extract vs direct_ex [bottleneck]: n=72  extract-only 0, direct_ex-only 3, McNemar p=0.25; diff -0.04 (family bootstrap 95% CI -0.08..+0.00); families 0 vs 3, sign p=0.25
+  extract vs direct_ex [certs]: n=72  extract-only 40, direct_ex-only 5, McNemar p=7.9e-08; diff +0.49 (family bootstrap 95% CI +0.39..+0.60); families 17 vs 0, sign p=1.5e-05
+  ext_model:program vs ext_model:model [bottleneck]: n=72  ext_model:program-only 0, ext_model:model-only 0, McNemar p=nan; diff +0.00 (family bootstrap 95% CI +0.00..+0.00); families 0 vs 0, sign p=nan
+  ext_model:program vs ext_model:model [certs]: n=72  ext_model:program-only 46, ext_model:model-only 0, McNemar p=2.8e-14; diff +0.64 (family bootstrap 95% CI +0.53..+0.74); families 18 vs 0, sign p=7.6e-06
+
+openai/gpt-4.1
+  direct             valid 70/72  bottleneck 60/72  certs 1/72
+      shared_same 1/18  shared_para 0/18  separate_diss 0/18  separate_sim 0/18
+  direct_ex          valid 72/72  bottleneck 68/72  certs 21/72
+      shared_same 13/18  shared_para 8/18  separate_diss 0/18  separate_sim 0/18
+  extract            valid 72/72  bottleneck 68/72  certs 68/72  sharing 68/72  added-common-premise 0
+      shared_same 18/18  shared_para 14/18  separate_diss 18/18  separate_sim 18/18
+  ext_model:model    valid 70/72  bottleneck 62/72  certs 32/72
+      shared_same 13/18  shared_para 13/18  separate_diss 4/18  separate_sim 2/18
+  ext_model:program  valid 72/72  bottleneck 69/72  certs 69/72  sharing 69/72  added-common-premise 0
+      shared_same 18/18  shared_para 15/18  separate_diss 18/18  separate_sim 18/18
+  extract vs direct [bottleneck]: n=72  extract-only 9, direct-only 1, McNemar p=0.021; diff +0.11 (family bootstrap 95% CI +0.06..+0.17); families 8 vs 0, sign p=0.0078
+  extract vs direct [certs]: n=72  extract-only 67, direct-only 0, McNemar p=1.4e-20; diff +0.93 (family bootstrap 95% CI +0.88..+0.99); families 18 vs 0, sign p=7.6e-06
+  extract vs direct_ex [bottleneck]: n=72  extract-only 1, direct_ex-only 1, McNemar p=1; diff +0.00 (family bootstrap 95% CI -0.04..+0.04); families 1 vs 1, sign p=1
+  extract vs direct_ex [certs]: n=72  extract-only 48, direct_ex-only 1, McNemar p=1.8e-13; diff +0.65 (family bootstrap 95% CI +0.56..+0.75); families 18 vs 0, sign p=7.6e-06
+  ext_model:program vs ext_model:model [bottleneck]: n=72  ext_model:program-only 7, ext_model:model-only 0, McNemar p=0.016; diff +0.10 (family bootstrap 95% CI +0.04..+0.17); families 6 vs 0, sign p=0.031
+  ext_model:program vs ext_model:model [certs]: n=72  ext_model:program-only 37, ext_model:model-only 0, McNemar p=1.5e-11; diff +0.51 (family bootstrap 95% CI +0.46..+0.57); families 18 vs 0, sign p=7.6e-06
+
+qwen/qwen3-235b-a22b-2507
+  direct             valid 71/72  bottleneck 41/72  certs 4/72
+      shared_same 1/18  shared_para 0/18  separate_diss 0/18  separate_sim 3/18
+  direct_ex          valid 72/72  bottleneck 63/72  certs 27/72
+      shared_same 12/18  shared_para 4/18  separate_diss 6/18  separate_sim 5/18
+  extract            valid 72/72  bottleneck 65/72  certs 65/72  sharing 65/72  added-common-premise 0
+      shared_same 18/18  shared_para 11/18  separate_diss 18/18  separate_sim 18/18
+  ext_model:model    valid 72/72  bottleneck 40/72  certs 15/72
+      shared_same 3/18  shared_para 0/18  separate_diss 7/18  separate_sim 5/18
+  ext_model:program  valid 72/72  bottleneck 68/72  certs 68/72  sharing 68/72  added-common-premise 0
+      shared_same 18/18  shared_para 14/18  separate_diss 18/18  separate_sim 18/18
+  extract vs direct [bottleneck]: n=72  extract-only 24, direct-only 0, McNemar p=1.2e-07; diff +0.33 (family bootstrap 95% CI +0.26..+0.42); families 17 vs 0, sign p=1.5e-05
+  extract vs direct [certs]: n=72  extract-only 61, direct-only 0, McNemar p=8.7e-19; diff +0.85 (family bootstrap 95% CI +0.78..+0.92); families 18 vs 0, sign p=7.6e-06
+  extract vs direct_ex [bottleneck]: n=72  extract-only 3, direct_ex-only 1, McNemar p=0.62; diff +0.03 (family bootstrap 95% CI -0.03..+0.10); families 2 vs 1, sign p=1
+  extract vs direct_ex [certs]: n=72  extract-only 38, direct_ex-only 0, McNemar p=7.3e-12; diff +0.53 (family bootstrap 95% CI +0.36..+0.68); families 15 vs 0, sign p=6.1e-05
+  ext_model:program vs ext_model:model [bottleneck]: n=72  ext_model:program-only 28, ext_model:model-only 0, McNemar p=7.5e-09; diff +0.39 (family bootstrap 95% CI +0.32..+0.46); families 17 vs 0, sign p=1.5e-05
+  ext_model:program vs ext_model:model [certs]: n=72  ext_model:program-only 53, ext_model:model-only 0, McNemar p=2.2e-16; diff +0.74 (family bootstrap 95% CI +0.61..+0.85); families 17 vs 0, sign p=1.5e-05

@@ -1,0 +1,707 @@
+{
+ "anthropic/claude-haiku-4.5": {
+  "direct": {
+   "n_items": 72,
+   "n_valid": 66,
+   "parse_fail": 6,
+   "bottleneck": 63,
+   "certs": 13,
+   "by_variant": {
+    "shared_same": {
+     "n": 18,
+     "certs": 9,
+     "bottleneck": 15
+    },
+    "shared_para": {
+     "n": 18,
+     "certs": 3,
+     "bottleneck": 13
+    },
+    "separate_diss": {
+     "n": 18,
+     "certs": 0,
+     "bottleneck": 17
+    },
+    "separate_sim": {
+     "n": 18,
+     "certs": 1,
+     "bottleneck": 18
+    }
+   }
+  },
+  "direct_ex": {
+   "n_items": 72,
+   "n_valid": 72,
+   "parse_fail": 0,
+   "bottleneck": 68,
+   "certs": 25,
+   "by_variant": {
+    "shared_same": {
+     "n": 18,
+     "certs": 13,
+     "bottleneck": 18
+    },
+    "shared_para": {
+     "n": 18,
+     "certs": 10,
+     "bottleneck": 14
+    },
+    "separate_diss": {
+     "n": 18,
+     "certs": 0,
+     "bottleneck": 18
+    },
+    "separate_sim": {
+     "n": 18,
+     "certs": 2,
+     "bottleneck": 18
+    }
+   }
+  },
+  "extract": {
+   "n_items": 72,
+   "n_valid": 72,
+   "parse_fail": 0,
+   "bottleneck": 65,
+   "certs": 60,
+   "sharing": 60,
+   "added_common": 0,
+   "by_variant": {
+    "shared_same": {
+     "n": 18,
+     "certs": 17,
+     "bottleneck": 18
+    },
+    "shared_para": {
+     "n": 18,
+     "certs": 7,
+     "bottleneck": 11
+    },
+    "separate_diss": {
+     "n": 18,
+     "certs": 18,
+     "bottleneck": 18
+    },
+    "separate_sim": {
+     "n": 18,
+     "certs": 18,
+     "bottleneck": 18
+    }
+   }
+  },
+  "ext_model:model": {
+   "n_items": 72,
+   "n_valid": 72,
+   "parse_fail": 0,
+   "bottleneck": 66,
+   "certs": 20,
+   "by_variant": {
+    "shared_same": {
+     "n": 18,
+     "certs": 9,
+     "bottleneck": 18
+    },
+    "shared_para": {
+     "n": 18,
+     "certs": 4,
+     "bottleneck": 12
+    },
+    "separate_diss": {
+     "n": 18,
+     "certs": 2,
+     "bottleneck": 18
+    },
+    "separate_sim": {
+     "n": 18,
+     "certs": 5,
+     "bottleneck": 18
+    }
+   }
+  },
+  "ext_model:program": {
+   "n_items": 72,
+   "n_valid": 72,
+   "parse_fail": 0,
+   "bottleneck": 66,
+   "certs": 66,
+   "sharing": 66,
+   "added_common": 0,
+   "by_variant": {
+    "shared_same": {
+     "n": 18,
+     "certs": 18,
+     "bottleneck": 18
+    },
+    "shared_para": {
+     "n": 18,
+     "certs": 12,
+     "bottleneck": 12
+    },
+    "separate_diss": {
+     "n": 18,
+     "certs": 18,
+     "bottleneck": 18
+    },
+    "separate_sim": {
+     "n": 18,
+     "certs": 18,
+     "bottleneck": 18
+    }
+   }
+  },
+  "extract_vs_direct_bottleneck": {
+   "n": 72,
+   "b_only": 5,
+   "a_only": 3,
+   "p": 0.7265625,
+   "diff": 0.02777777777777779,
+   "ci": [
+    -0.05555555555555558,
+    0.125
+   ],
+   "families_b": 2,
+   "families_a": 2,
+   "family_sign_p": 1.0
+  },
+  "extract_vs_direct_certs": {
+   "n": 72,
+   "b_only": 48,
+   "a_only": 1,
+   "p": 1.7763568394002505e-13,
+   "diff": 0.6527777777777778,
+   "ci": [
+    0.5694444444444444,
+    0.7361111111111112
+   ],
+   "families_b": 18,
+   "families_a": 0,
+   "family_sign_p": 7.62939453125e-06
+  },
+  "extract_vs_direct_ex_bottleneck": {
+   "n": 72,
+   "b_only": 0,
+   "a_only": 3,
+   "p": 0.25,
+   "diff": -0.04166666666666663,
+   "ci": [
+    -0.08333333333333337,
+    0.0
+   ],
+   "families_b": 0,
+   "families_a": 3,
+   "family_sign_p": 0.25
+  },
+  "extract_vs_direct_ex_certs": {
+   "n": 72,
+   "b_only": 40,
+   "a_only": 5,
+   "p": 7.878384167270269e-08,
+   "diff": 0.48611111111111116,
+   "ci": [
+    0.38888888888888884,
+    0.5972222222222222
+   ],
+   "families_b": 17,
+   "families_a": 0,
+   "family_sign_p": 1.52587890625e-05
+  },
+  "ext_model:program_vs_ext_model:model_bottleneck": {
+   "n": 72,
+   "b_only": 0,
+   "a_only": 0,
+   "p": NaN,
+   "diff": 0.0,
+   "ci": [
+    0.0,
+    0.0
+   ],
+   "families_b": 0,
+   "families_a": 0,
+   "family_sign_p": NaN
+  },
+  "ext_model:program_vs_ext_model:model_certs": {
+   "n": 72,
+   "b_only": 46,
+   "a_only": 0,
+   "p": 2.842170943040401e-14,
+   "diff": 0.6388888888888888,
+   "ci": [
+    0.5277777777777778,
+    0.7361111111111112
+   ],
+   "families_b": 18,
+   "families_a": 0,
+   "family_sign_p": 7.62939453125e-06
+  }
+ },
+ "openai/gpt-4.1": {
+  "direct": {
+   "n_items": 72,
+   "n_valid": 70,
+   "parse_fail": 2,
+   "bottleneck": 60,
+   "certs": 1,
+   "by_variant": {
+    "shared_same": {
+     "n": 18,
+     "certs": 1,
+     "bottleneck": 13
+    },
+    "shared_para": {
+     "n": 18,
+     "certs": 0,
+     "bottleneck": 12
+    },
+    "separate_diss": {
+     "n": 18,
+     "certs": 0,
+     "bottleneck": 18
+    },
+    "separate_sim": {
+     "n": 18,
+     "certs": 0,
+     "bottleneck": 17
+    }
+   }
+  },
+  "direct_ex": {
+   "n_items": 72,
+   "n_valid": 72,
+   "parse_fail": 0,
+   "bottleneck": 68,
+   "certs": 21,
+   "by_variant": {
+    "shared_same": {
+     "n": 18,
+     "certs": 13,
+     "bottleneck": 18
+    },
+    "shared_para": {
+     "n": 18,
+     "certs": 8,
+     "bottleneck": 15
+    },
+    "separate_diss": {
+     "n": 18,
+     "certs": 0,
+     "bottleneck": 18
+    },
+    "separate_sim": {
+     "n": 18,
+     "certs": 0,
+     "bottleneck": 17
+    }
+   }
+  },
+  "extract": {
+   "n_items": 72,
+   "n_valid": 72,
+   "parse_fail": 0,
+   "bottleneck": 68,
+   "certs": 68,
+   "sharing": 68,
+   "added_common": 0,
+   "by_variant": {
+    "shared_same": {
+     "n": 18,
+     "certs": 18,
+     "bottleneck": 18
+    },
+    "shared_para": {
+     "n": 18,
+     "certs": 14,
+     "bottleneck": 14
+    },
+    "separate_diss": {
+     "n": 18,
+     "certs": 18,
+     "bottleneck": 18
+    },
+    "separate_sim": {
+     "n": 18,
+     "certs": 18,
+     "bottleneck": 18
+    }
+   }
+  },
+  "ext_model:model": {
+   "n_items": 72,
+   "n_valid": 70,
+   "parse_fail": 2,
+   "bottleneck": 62,
+   "certs": 32,
+   "by_variant": {
+    "shared_same": {
+     "n": 18,
+     "certs": 13,
+     "bottleneck": 15
+    },
+    "shared_para": {
+     "n": 18,
+     "certs": 13,
+     "bottleneck": 13
+    },
+    "separate_diss": {
+     "n": 18,
+     "certs": 4,
+     "bottleneck": 17
+    },
+    "separate_sim": {
+     "n": 18,
+     "certs": 2,
+     "bottleneck": 17
+    }
+   }
+  },
+  "ext_model:program": {
+   "n_items": 72,
+   "n_valid": 72,
+   "parse_fail": 0,
+   "bottleneck": 69,
+   "certs": 69,
+   "sharing": 69,
+   "added_common": 0,
+   "by_variant": {
+    "shared_same": {
+     "n": 18,
+     "certs": 18,
+     "bottleneck": 18
+    },
+    "shared_para": {
+     "n": 18,
+     "certs": 15,
+     "bottleneck": 15
+    },
+    "separate_diss": {
+     "n": 18,
+     "certs": 18,
+     "bottleneck": 18
+    },
+    "separate_sim": {
+     "n": 18,
+     "certs": 18,
+     "bottleneck": 18
+    }
+   }
+  },
+  "extract_vs_direct_bottleneck": {
+   "n": 72,
+   "b_only": 9,
+   "a_only": 1,
+   "p": 0.021484375,
+   "diff": 0.11111111111111105,
+   "ci": [
+    0.05555555555555558,
+    0.16666666666666674
+   ],
+   "families_b": 8,
+   "families_a": 0,
+   "family_sign_p": 0.0078125
+  },
+  "extract_vs_direct_certs": {
+   "n": 72,
+   "b_only": 67,
+   "a_only": 0,
+   "p": 1.3552527156068805e-20,
+   "diff": 0.9305555555555556,
+   "ci": [
+    0.875,
+    0.9861111111111112
+   ],
+   "families_b": 18,
+   "families_a": 0,
+   "family_sign_p": 7.62939453125e-06
+  },
+  "extract_vs_direct_ex_bottleneck": {
+   "n": 72,
+   "b_only": 1,
+   "a_only": 1,
+   "p": 1.0,
+   "diff": 0.0,
+   "ci": [
+    -0.04166666666666663,
+    0.04166666666666663
+   ],
+   "families_b": 1,
+   "families_a": 1,
+   "family_sign_p": 1.0
+  },
+  "extract_vs_direct_ex_certs": {
+   "n": 72,
+   "b_only": 48,
+   "a_only": 1,
+   "p": 1.7763568394002505e-13,
+   "diff": 0.6527777777777777,
+   "ci": [
+    0.5555555555555556,
+    0.75
+   ],
+   "families_b": 18,
+   "families_a": 0,
+   "family_sign_p": 7.62939453125e-06
+  },
+  "ext_model:program_vs_ext_model:model_bottleneck": {
+   "n": 72,
+   "b_only": 7,
+   "a_only": 0,
+   "p": 0.015625,
+   "diff": 0.09722222222222221,
+   "ci": [
+    0.04166666666666663,
+    0.16666666666666674
+   ],
+   "families_b": 6,
+   "families_a": 0,
+   "family_sign_p": 0.03125
+  },
+  "ext_model:program_vs_ext_model:model_certs": {
+   "n": 72,
+   "b_only": 37,
+   "a_only": 0,
+   "p": 1.4551915228366852e-11,
+   "diff": 0.513888888888889,
+   "ci": [
+    0.4583333333333333,
+    0.5694444444444444
+   ],
+   "families_b": 18,
+   "families_a": 0,
+   "family_sign_p": 7.62939453125e-06
+  }
+ },
+ "qwen/qwen3-235b-a22b-2507": {
+  "direct": {
+   "n_items": 72,
+   "n_valid": 71,
+   "parse_fail": 1,
+   "bottleneck": 41,
+   "certs": 4,
+   "by_variant": {
+    "shared_same": {
+     "n": 18,
+     "certs": 1,
+     "bottleneck": 3
+    },
+    "shared_para": {
+     "n": 18,
+     "certs": 0,
+     "bottleneck": 3
+    },
+    "separate_diss": {
+     "n": 18,
+     "certs": 0,
+     "bottleneck": 18
+    },
+    "separate_sim": {
+     "n": 18,
+     "certs": 3,
+     "bottleneck": 17
+    }
+   }
+  },
+  "direct_ex": {
+   "n_items": 72,
+   "n_valid": 72,
+   "parse_fail": 0,
+   "bottleneck": 63,
+   "certs": 27,
+   "by_variant": {
+    "shared_same": {
+     "n": 18,
+     "certs": 12,
+     "bottleneck": 17
+    },
+    "shared_para": {
+     "n": 18,
+     "certs": 4,
+     "bottleneck": 10
+    },
+    "separate_diss": {
+     "n": 18,
+     "certs": 6,
+     "bottleneck": 18
+    },
+    "separate_sim": {
+     "n": 18,
+     "certs": 5,
+     "bottleneck": 18
+    }
+   }
+  },
+  "extract": {
+   "n_items": 72,
+   "n_valid": 72,
+   "parse_fail": 0,
+   "bottleneck": 65,
+   "certs": 65,
+   "sharing": 65,
+   "added_common": 0,
+   "by_variant": {
+    "shared_same": {
+     "n": 18,
+     "certs": 18,
+     "bottleneck": 18
+    },
+    "shared_para": {
+     "n": 18,
+     "certs": 11,
+     "bottleneck": 11
+    },
+    "separate_diss": {
+     "n": 18,
+     "certs": 18,
+     "bottleneck": 18
+    },
+    "separate_sim": {
+     "n": 18,
+     "certs": 18,
+     "bottleneck": 18
+    }
+   }
+  },
+  "ext_model:model": {
+   "n_items": 72,
+   "n_valid": 72,
+   "parse_fail": 0,
+   "bottleneck": 40,
+   "certs": 15,
+   "by_variant": {
+    "shared_same": {
+     "n": 18,
+     "certs": 3,
+     "bottleneck": 3
+    },
+    "shared_para": {
+     "n": 18,
+     "certs": 0,
+     "bottleneck": 1
+    },
+    "separate_diss": {
+     "n": 18,
+     "certs": 7,
+     "bottleneck": 18
+    },
+    "separate_sim": {
+     "n": 18,
+     "certs": 5,
+     "bottleneck": 18
+    }
+   }
+  },
+  "ext_model:program": {
+   "n_items": 72,
+   "n_valid": 72,
+   "parse_fail": 0,
+   "bottleneck": 68,
+   "certs": 68,
+   "sharing": 68,
+   "added_common": 0,
+   "by_variant": {
+    "shared_same": {
+     "n": 18,
+     "certs": 18,
+     "bottleneck": 18
+    },
+    "shared_para": {
+     "n": 18,
+     "certs": 14,
+     "bottleneck": 14
+    },
+    "separate_diss": {
+     "n": 18,
+     "certs": 18,
+     "bottleneck": 18
+    },
+    "separate_sim": {
+     "n": 18,
+     "certs": 18,
+     "bottleneck": 18
+    }
+   }
+  },
+  "extract_vs_direct_bottleneck": {
+   "n": 72,
+   "b_only": 24,
+   "a_only": 0,
+   "p": 1.1920928955078125e-07,
+   "diff": 0.33333333333333337,
+   "ci": [
+    0.26388888888888884,
+    0.41666666666666663
+   ],
+   "families_b": 17,
+   "families_a": 0,
+   "family_sign_p": 1.52587890625e-05
+  },
+  "extract_vs_direct_certs": {
+   "n": 72,
+   "b_only": 61,
+   "a_only": 0,
+   "p": 8.673617379884035e-19,
+   "diff": 0.8472222222222222,
+   "ci": [
+    0.7777777777777778,
+    0.9166666666666666
+   ],
+   "families_b": 18,
+   "families_a": 0,
+   "family_sign_p": 7.62939453125e-06
+  },
+  "extract_vs_direct_ex_bottleneck": {
+   "n": 72,
+   "b_only": 3,
+   "a_only": 1,
+   "p": 0.625,
+   "diff": 0.02777777777777779,
+   "ci": [
+    -0.02777777777777779,
+    0.09722222222222221
+   ],
+   "families_b": 2,
+   "families_a": 1,
+   "family_sign_p": 1.0
+  },
+  "extract_vs_direct_ex_certs": {
+   "n": 72,
+   "b_only": 38,
+   "a_only": 0,
+   "p": 7.275957614183426e-12,
+   "diff": 0.5277777777777778,
+   "ci": [
+    0.36111111111111116,
+    0.6805555555555556
+   ],
+   "families_b": 15,
+   "families_a": 0,
+   "family_sign_p": 6.103515625e-05
+  },
+  "ext_model:program_vs_ext_model:model_bottleneck": {
+   "n": 72,
+   "b_only": 28,
+   "a_only": 0,
+   "p": 7.450580596923828e-09,
+   "diff": 0.38888888888888884,
+   "ci": [
+    0.3194444444444444,
+    0.45833333333333337
+   ],
+   "families_b": 17,
+   "families_a": 0,
+   "family_sign_p": 1.52587890625e-05
+  },
+  "ext_model:program_vs_ext_model:model_certs": {
+   "n": 72,
+   "b_only": 53,
+   "a_only": 0,
+   "p": 2.220446049250313e-16,
+   "diff": 0.736111111111111,
+   "ci": [
+    0.6111111111111112,
+    0.8472222222222222
+   ],
+   "families_b": 17,
+   "families_a": 0,
+   "family_sign_p": 1.52587890625e-05
+  }
+ }
+}

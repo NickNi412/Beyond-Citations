@@ -1,0 +1,120 @@
+{
+ "exp4_extract.jsonl | anthropic/claude-haiku-4.5": {
+  "cards": 6,
+  "conditions": 49,
+  "each_study": 25,
+  "bott_before": 3,
+  "bott_after": 3,
+  "cards_with_bott_before": 3,
+  "cards_with_bott_after": 3,
+  "plan_changed": 3
+ },
+ "exp4_extract.jsonl | openai/gpt-4.1": {
+  "cards": 6,
+  "conditions": 30,
+  "each_study": 19,
+  "bott_before": 20,
+  "bott_after": 10,
+  "cards_with_bott_before": 6,
+  "cards_with_bott_after": 5,
+  "plan_changed": 2
+ },
+ "exp4_extract.jsonl | qwen/qwen3-235b-a22b-2507": {
+  "cards": 6,
+  "conditions": 56,
+  "each_study": 40,
+  "bott_before": 6,
+  "bott_after": 2,
+  "cards_with_bott_before": 5,
+  "cards_with_bott_after": 2,
+  "plan_changed": 1
+ },
+ "exp4_extract_runA.jsonl | anthropic/claude-haiku-4.5": {
+  "cards": 6,
+  "conditions": 50,
+  "each_study": 23,
+  "bott_before": 8,
+  "bott_after": 2,
+  "cards_with_bott_before": 3,
+  "cards_with_bott_after": 2,
+  "plan_changed": 1
+ },
+ "exp4_extract_runA.jsonl | openai/gpt-4.1": {
+  "cards": 6,
+  "conditions": 34,
+  "each_study": 26,
+  "bott_before": 21,
+  "bott_after": 12,
+  "cards_with_bott_before": 6,
+  "cards_with_bott_after": 4,
+  "plan_changed": 0
+ },
+ "exp4_extract_runA.jsonl | qwen/qwen3-235b-a22b-2507": {
+  "cards": 6,
+  "conditions": 57,
+  "each_study": 37,
+  "bott_before": 13,
+  "bott_after": 0,
+  "cards_with_bott_before": 6,
+  "cards_with_bott_after": 0,
+  "plan_changed": 0
+ },
+ "exp5_extract.jsonl | anthropic/claude-opus-5.5": {
+  "cards": 6,
+  "conditions": 61,
+  "each_study": 39,
+  "bott_before": 11,
+  "bott_after": 5,
+  "cards_with_bott_before": 5,
+  "cards_with_bott_after": 4,
+  "plan_changed": 1,
+  "audits_with_bott_after": 4,
+  "said_none_after": 3,
+  "named_after": 0,
+  "bott_ids_after": 5,
+  "tol_over": 2,
+  "tol_exact": 3
+ },
+ "exp5_extract.jsonl | google/gemini-3.1-pro-preview": {
+  "cards": 6,
+  "conditions": 21,
+  "each_study": 15,
+  "bott_before": 14,
+  "bott_after": 14,
+  "cards_with_bott_before": 5,
+  "cards_with_bott_after": 4,
+  "plan_changed": 1,
+  "tol_over": 4,
+  "tol_exact": 2,
+  "audits_with_bott_after": 4,
+  "said_none_after": 4,
+  "named_after": 0,
+  "bott_ids_after": 9
+ },
+ "exp5_extract.jsonl | openai/gpt-6.1-sol": {
+  "cards": 6,
+  "conditions": 48,
+  "each_study": 42,
+  "bott_before": 10,
+  "bott_after": 1,
+  "cards_with_bott_before": 4,
+  "cards_with_bott_after": 1,
+  "plan_changed": 2,
+  "tol_over": 4,
+  "tol_exact": 1,
+  "audits_with_bott_after": 1,
+  "said_none_after": 0,
+  "named_after": 0,
+  "bott_ids_after": 1
+ },
+ "exp5_extract.jsonl | qwen/qwen3-235b-a22b-thinking-2507": {
+  "cards": 6,
+  "conditions": 39,
+  "each_study": 28,
+  "bott_before": 16,
+  "bott_after": 9,
+  "cards_with_bott_before": 6,
+  "cards_with_bott_after": 5,
+  "plan_changed": 2
+ }
+}

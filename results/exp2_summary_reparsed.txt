@@ -1,0 +1,15 @@
+
+anthropic/claude-haiku-4.5  (n=60, parse failures=1)
+  derivation recall 0.58, precision 0.72
+  tau from extraction: accuracy 0.73, MAE 0.27
+  tau stated directly: accuracy 0.41, MAE 0.64
+
+openai/gpt-4.1  (n=60, parse failures=2)
+  derivation recall 0.79, precision 0.75
+  tau from extraction: accuracy 0.74, MAE 0.28
+  tau stated directly: accuracy 0.38, MAE 0.66
+
+qwen/qwen3-235b-a22b-2507  (n=60, parse failures=0)
+  derivation recall 0.45, precision 0.55
+  tau from extraction: accuracy 0.70, MAE 0.35
+  tau stated directly: accuracy 0.18, MAE 1.10

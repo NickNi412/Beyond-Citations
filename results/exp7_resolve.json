@@ -1,0 +1,630 @@
+{
+ "vitd": {
+  "question": "Does vitamin D supplementation reduce the risk of acute respiratory infections in adults?",
+  "refs": [
+   {
+    "ref": 1,
+    "title": "Vitamin D supplementation to prevent acute respiratory tract infections: systematic review and meta-analysis of individual participant data",
+    "year": 2017,
+    "url": "https://www.bmj.com/content/356/bmj.i6583",
+    "pmc": null,
+    "matched": true,
+    "how": "title search",
+    "title_similarity": 1.0,
+    "paper": {
+     "id": "28202713",
+     "title": "Vitamin D supplementation to prevent acute respiratory tract infections: systematic review and meta-analysis of individual participant data.",
+     "source": "pubmed",
+     "doi": "10.1136/bmj.i6583",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28202713/",
+     "date": {
+      "value": "2017-02-15",
+      "precision": "day",
+      "basis": "electronic_publication"
+     },
+     "abstract": "Objectives To assess the overall effect of vitamin D supplementation on risk of acute respiratory tract infection, and to identify factors modifying this effect.Design Systematic review and meta-analysis of individual participant data (IPD) from randomised controlled trials.Data sources Medline, Embase, the Cochrane Central Register of Controlled Trials, Web of Science, ClinicalTrials.gov, and the International Standard Randomised Controlled Trials Number registry from inception to December 2015.Eligibility criteria for study selection Randomised, double blind, placebo controlled trials of sup..."
+    }
+   },
+   {
+    "ref": 2,
+    "title": "Optimal methods of vitamin D supplementation to prevent acute respiratory infections: a systematic review and meta-analysis",
+    "year": 2024,
+    "url": "https://link.springer.com/article/10.1186/s12937-024-00990-w",
+    "pmc": null,
+    "matched": false,
+    "how": null,
+    "title_similarity": null,
+    "paper": null
+   },
+   {
+    "ref": 3,
+    "title": "Vitamin D supplementation for prevention of acute respiratory infections: a systematic review and meta-analysis",
+    "year": 2024,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11125479/",
+    "pmc": "PMC11125479",
+    "matched": true,
+    "how": "pmc id",
+    "title_similarity": 0.9322033898305084,
+    "paper": {
+     "id": "38787821",
+     "title": "Vitamin D supplementation for prevention of acute respiratory infections in older adults: A systematic review and meta-analysis.",
+     "source": "pubmed",
+     "doi": "10.1371/journal.pone.0303495",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/38787821/",
+     "date": {
+      "value": "2024-05-24",
+      "precision": "day",
+      "basis": "electronic_publication"
+     },
+     "abstract": "BACKGROUND: Acute respiratory infections (ARIs) have a substantial impact on morbidity, healthcare utilization, and functional decline among older adults. Therefore, we systematically reviewed evidence from randomized controlled trials (RCTs) to evaluate the efficacy and safety of vitamin D supplementation in preventing ARIs in older adults. METHODS: PubMed, Embase, the Cochrane Library, and ClinicalTrials.gov were searched until 1 February 2024. RCTs evaluating the use of vitamin D supplements to protect older adults from ARIs were included. Two reviewers independently screened papers, extrac..."
+    }
+   },
+   {
+    "ref": 4,
+    "title": "Vitamin D supplementation to prevent acute respiratory infections: systematic review and meta-analysis of stratified aggregate data",
+    "year": 2024,
+    "url": "https://www.medrxiv.org/content/10.1101/2024.09.18.24313866v1.full.pdf",
+    "pmc": null,
+    "matched": true,
+    "how": "title search",
+    "title_similarity": 1.0,
+    "paper": {
+     "id": "39993397",
+     "title": "Vitamin D supplementation to prevent acute respiratory infections: systematic review and meta-analysis of stratified aggregate data.",
+     "source": "pubmed",
+     "doi": "10.1016/S2213-8587(24)00348-6",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39993397/",
+     "date": {
+      "value": "2025-02-21",
+      "precision": "day",
+      "basis": "electronic_publication"
+     },
+     "abstract": "BACKGROUND: A 2021 meta-analysis of 37 randomised controlled trials (RCTs) of vitamin D supplementation for prevention of acute respiratory infections (ARIs) revealed a statistically significant protective effect of the intervention (odds ratio [OR] 0·92 [95% CI 0·86 to 0·99]). Since then, six eligible RCTs have been completed, including one large trial (n=15 804). We aimed to re-examine the link between vitamin D supplementation and prevention of ARIs. METHODS: Updated systematic review and meta-analysis of data from RCTs of vitamin D for ARI prevention using a random effects model. Subgroup ..."
+    }
+   }
+  ],
+  "same_paper": []
+ },
+ "creatine": {
+  "question": "Is long-term creatine supplementation safe for kidney function in healthy adults?",
+  "refs": [
+   {
+    "ref": 1,
+    "title": "Effects of Creatine Supplementation on Renal Function: A Systematic Review and Meta-Analysis",
+    "year": 2019,
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1051227619302286",
+    "pmc": null,
+    "matched": true,
+    "how": "title search",
+    "title_similarity": 1.0,
+    "paper": {
+     "id": "31375416",
+     "title": "Effects of Creatine Supplementation on Renal Function: A Systematic Review and Meta-Analysis.",
+     "source": "pubmed",
+     "doi": "10.1053/j.jrn.2019.05.004",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/31375416/",
+     "date": {
+      "value": "2019-07-30",
+      "precision": "day",
+      "basis": "electronic_publication"
+     },
+     "abstract": "Creatine supplements are intended to improve performance, but there are indications that it can overwhelm liver and kidney functions, reduce the quality of life, and increase mortality. Therefore, this is the first systematic review and meta-analysis study that aimed to investigate creatine supplements and their possible renal function side effects. After evaluating 290 non-duplicated studies, 15 were included in the qualitative analysis and 6 in the quantitative analysis. The results of the meta-analysis suggest that creatine supplementation did not significantly alter serum creatinine levels..."
+    }
+   },
+   {
+    "ref": 2,
+    "title": "Effect of Creatine Supplementation on Kidney Function",
+    "year": 2025,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12590749/",
+    "pmc": "PMC12590749",
+    "matched": true,
+    "how": "pmc id",
+    "title_similarity": 0.7361111111111112,
+    "paper": {
+     "id": "41199218",
+     "title": "Effect of creatine supplementation on kidney function: a systematic review and meta-analysis.",
+     "source": "pubmed",
+     "doi": "10.1186/s12882-025-04558-6",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41199218/",
+     "date": {
+      "value": "2025-11-06",
+      "precision": "day",
+      "basis": "electronic_publication"
+     },
+     "abstract": "BACKGROUND: Creatine monohydrate is a widely used dietary supplement with proven benefits in athletic performance and potential therapeutic applications in clinical populations. However, concerns regarding its impact on renal function persist, largely due to elevated serum creatinine levels associated with creatine intake. METHODS: A comprehensive literature search was conducted in PubMed, Scopus, Web of Science, and Google Scholar for studies published between January 2000 and March 2025. Primary outcomes were serum creatinine and glomerular filtration rate (GFR). Meta-analyses were performed..."
+    }
+   },
+   {
+    "ref": 3,
+    "title": "Is It Time for a Requiem for Creatine Supplementation-Induced Kidney Dysfunction?",
+    "year": 2023,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10054094/",
+    "pmc": "PMC10054094",
+    "matched": true,
+    "how": "pmc id",
+    "title_similarity": 0.8457142857142858,
+    "paper": {
+     "id": "36986197",
+     "title": "Is It Time for a Requiem for Creatine Supplementation-Induced Kidney Failure? A Narrative Review.",
+     "source": "pubmed",
+     "doi": "10.3390/nu15061466",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36986197/",
+     "date": {
+      "value": "2023-03-18",
+      "precision": "day",
+      "basis": "electronic_publication"
+     },
+     "abstract": "Creatine has become one of the most popular dietary supplements among a wide range of healthy and clinical populations. However, its potential adverse effects on kidney health are still a matter of concern. This is a narrative review of the effects of creatine supplementation on kidney function. Despite a few case reports and animal studies suggesting that creatine may impair kidney function, clinical trials with controlled designs do not support this claim. Creatine supplementation may increase serum creatinine (Crn) concentration for some individuals, but it does not necessarily indicate kid..."
+    }
+   },
+   {
+    "ref": 4,
+    "title": "A Short Review of the Most Common Safety Concerns Regarding Creatine Supplementation",
+    "year": 2025,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12702719/",
+    "pmc": "PMC12702719",
+    "matched": true,
+    "how": "title search",
+    "title_similarity": 0.9135802469135802,
+    "paper": {
+     "id": "41404326",
+     "title": "A short review of the most common safety concerns regarding creatine ingestion.",
+     "source": "pubmed",
+     "doi": "10.3389/fnut.2025.1682746",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/41404326/",
+     "date": {
+      "value": "2025-12-01",
+      "precision": "day",
+      "basis": "electronic_publication"
+     },
+     "abstract": "Creatine monohydrate supplementation is widely used for enhancing athletic performance and improving clinical outcomes, but concerns regarding its safety persist, particularly relating to risk of cancer, impaired kidney function, dehydration, and gastrointestinal issues. This short review critically evaluates these concerns based on current scientific evidence. Although some theoretical risks, such as creatine's potential to form carcinogenic compounds, have been discussed, the available research does not support a link between creatine supplementation and cancer. In terms of kidney health, st..."
+    }
+   },
+   {
+    "ref": 5,
+    "title": "International Society of Sports Nutrition Position Stand: Safety and Efficacy of Creatine Supplementation in Exercise, Sport, and Medicine",
+    "year": 2017,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5469049/",
+    "pmc": "PMC5469049",
+    "matched": true,
+    "how": "pmc id",
+    "title_similarity": 1.0,
+    "paper": {
+     "id": "28615996",
+     "title": "International Society of Sports Nutrition position stand: safety and efficacy of creatine supplementation in exercise, sport, and medicine.",
+     "source": "pubmed",
+     "doi": "10.1186/s12970-017-0173-z",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/28615996/",
+     "date": {
+      "value": "2017-06-13",
+      "precision": "day",
+      "basis": "electronic_publication"
+     },
+     "abstract": "Creatine is one of the most popular nutritional ergogenic aids for athletes. Studies have consistently shown that creatine supplementation increases intramuscular creatine concentrations which may help explain the observed improvements in high intensity exercise performance leading to greater training adaptations. In addition to athletic and exercise improvement, research has shown that creatine supplementation may enhance post-exercise recovery, injury prevention, thermoregulation, rehabilitation, and concussion and/or spinal cord neuroprotection. Additionally, a number of clinical applicatio..."
+    }
+   }
+  ],
+  "same_paper": []
+ },
+ "lfp": {
+  "question": "Do lithium iron phosphate (LFP) home storage batteries last more than 6000 full cycles?",
+  "refs": [
+   {
+    "ref": 1,
+    "title": "Analysis and modeling of calendar aging of a commercial LiFePO₄/graphite battery",
+    "year": 2018,
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S2352152X18300665",
+    "pmc": null,
+    "matched": false,
+    "how": null,
+    "title_similarity": null,
+    "paper": null
+   },
+   {
+    "ref": 2,
+    "title": "Lithium iron phosphate based battery – Assessment of the aging parameters and development of cycle life model",
+    "year": 2014,
+    "url": "https://www.sciencedirect.com/science/article/pii/S0306261913007393",
+    "pmc": null,
+    "matched": false,
+    "how": null,
+    "title_similarity": null,
+    "paper": null
+   },
+   {
+    "ref": 3,
+    "title": "EVOLVE LFP: Industry-leading lithium-ion batteries",
+    "year": 2025,
+    "url": "https://www.eguanatech.com/_resources/pdf/evolve-lfp-datasheet.pdf",
+    "pmc": null,
+    "matched": false,
+    "how": null,
+    "title_similarity": null,
+    "paper": null
+   },
+   {
+    "ref": 4,
+    "title": "Lynx A G3 Series",
+    "year": 2026,
+    "url": "https://en.goodwe.com/lynxa-g3-series",
+    "pmc": null,
+    "matched": false,
+    "how": null,
+    "title_similarity": null,
+    "paper": null
+   },
+   {
+    "ref": 5,
+    "title": "Deye SE-F12 Battery",
+    "year": 2026,
+    "url": "https://sana-energy.ir/en/products/batteries/deye-se-f12-battery/",
+    "pmc": null,
+    "matched": false,
+    "how": null,
+    "title_similarity": null,
+    "paper": null
+   }
+  ],
+  "same_paper": []
+ },
+ "fasting": {
+  "question": "Does intermittent fasting produce more weight loss than continuous calorie restriction in adults?",
+  "refs": [
+   {
+    "ref": 1,
+    "title": "Intermittent fasting strategies and their effects on body weight and other cardiometabolic risk factors: systematic review and network meta-analysis of randomised clinical trials",
+    "year": 2025,
+    "url": "https://www.bmj.com/content/389/bmj-2024-082007",
+    "pmc": null,
+    "matched": true,
+    "how": "title search",
+    "title_similarity": 1.0,
+    "paper": {
+     "id": "40533200",
+     "title": "Intermittent fasting strategies and their effects on body weight and other cardiometabolic risk factors: systematic review and network meta-analysis of randomised clinical trials.",
+     "source": "pubmed",
+     "doi": "10.1136/bmj-2024-082007",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/40533200/",
+     "date": {
+      "value": "2025-06-18",
+      "precision": "day",
+      "basis": "electronic_publication"
+     },
+     "abstract": "OBJECTIVE: To assess the effect of intermittent fasting diets, with continuous energy restriction or unrestricted (ad-libitum) diets on intermediate cardiometabolic outcomes from randomised clinical trials. DESIGN: Systematic review and network meta-analysis. DATA SOURCES: Medline, Embase, and central databases from inception to 14 November 2024. ELIGIBILITY CRITERIA FOR SELECTING STUDIES: Randomised clinical trials comparing the association of intermittent fasting diets (alternate day fasting, time restricted eating, and whole day fasting), continuous energy restriction, and ad-libitum diets ..."
+    }
+   },
+   {
+    "ref": 2,
+    "title": "Is Fasting Superior to Continuous Caloric Restriction for Weight Loss and Metabolic Outcomes in Obese Adults? A Systematic Review and Meta-Analysis of Randomized Clinical Trials",
+    "year": 2024,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11510157/",
+    "pmc": "PMC11510157",
+    "matched": true,
+    "how": "pmc id",
+    "title_similarity": 1.0,
+    "paper": {
+     "id": "39458528",
+     "title": "Is Fasting Superior to Continuous Caloric Restriction for Weight Loss and Metabolic Outcomes in Obese Adults? A Systematic Review and Meta-Analysis of Randomized Clinical Trials.",
+     "source": "pubmed",
+     "doi": "10.3390/nu16203533",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39458528/",
+     "date": {
+      "value": "2024-10-18",
+      "precision": "day",
+      "basis": "electronic_publication"
+     },
+     "abstract": "BACKGROUND: fasting-based strategies (FBS) and continuous caloric restriction (CCR) are popular methods for weight loss and improving metabolic health. FBS alternates between eating and fasting periods, while CCR reduces daily calorie intake consistently. Both aim to create a calorie deficit, but it is still uncertain as to which is more effective for short- and long-term weight and metabolic outcomes. OBJECTIVES: this systematic review and meta-analysis aimed to compare the effectiveness of FBS and CCR on these parameters in obese adults. METHODS: after screening 342 articles, 10 randomized c..."
+    }
+   },
+   {
+    "ref": 3,
+    "title": "Intermittent fasting for the prevention of cardiovascular disease",
+    "year": 2021,
+    "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013496.pub2/full",
+    "pmc": null,
+    "matched": true,
+    "how": "title search",
+    "title_similarity": 1.0,
+    "paper": {
+     "id": "33512717",
+     "title": "Intermittent fasting for the prevention of cardiovascular disease.",
+     "source": "pubmed",
+     "doi": "10.1002/14651858.CD013496.pub2",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/33512717/",
+     "date": {
+      "value": "2021-01-29",
+      "precision": "day",
+      "basis": "electronic_publication"
+     },
+     "abstract": "BACKGROUND: Cardiovascular disease (CVD) is the leading cause of death worldwide. Lifestyle changes are at the forefront of preventing the disease. This includes advice such as increasing physical activity and having a healthy balanced diet to reduce risk factors. Intermittent fasting (IF) is a popular dietary plan involving restricting caloric intake to certain days in the week such as alternate day fasting and periodic fasting, and restricting intake to a number of hours in a given day, otherwise known as time-restricted feeding. IF is being researched for its benefits and many randomised co..."
+    }
+   },
+   {
+    "ref": 4,
+    "title": "Intermittent versus continuous energy restriction on weight loss and cardiometabolic outcomes: a systematic review and meta-analysis of randomized controlled trials",
+    "year": 2018,
+    "url": "https://link.springer.com/article/10.1186/s12967-018-1748-4",
+    "pmc": null,
+    "matched": true,
+    "how": "title search",
+    "title_similarity": 1.0,
+    "paper": {
+     "id": "30583725",
+     "title": "Intermittent versus continuous energy restriction on weight loss and cardiometabolic outcomes: a systematic review and meta-analysis of randomized controlled trials.",
+     "source": "pubmed",
+     "doi": "10.1186/s12967-018-1748-4",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/30583725/",
+     "date": {
+      "value": "2018-12-24",
+      "precision": "day",
+      "basis": "electronic_publication"
+     },
+     "abstract": "BACKGROUND: This systematic review and meta-analysis summarized the most recent evidence on the efficacy of intermittent energy restriction (IER) versus continuous energy restriction on weight-loss, body composition, blood pressure and other cardiometabolic risk factors. METHODS: Randomized controlled trials were systematically searched from MEDLINE, Cochrane Library, TRIP databases, EMBASE and CINAHL until May 2018. Effect sizes were expressed as weighted mean difference (WMD) and 95% confidence intervals (CI). RESULTS: Eleven trials were included (duration range 8-24 weeks). All selected int..."
+    }
+   },
+   {
+    "ref": 5,
+    "title": "Comparing caloric restriction regimens for effective weight management in adults: a systematic review and network meta-analysis",
+    "year": 2024,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11425986/",
+    "pmc": "PMC11425986",
+    "matched": true,
+    "how": "pmc id",
+    "title_similarity": 1.0,
+    "paper": {
+     "id": "39327619",
+     "title": "Comparing caloric restriction regimens for effective weight management in adults: a systematic review and network meta-analysis.",
+     "source": "pubmed",
+     "doi": "10.1186/s12966-024-01657-9",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/39327619/",
+     "date": {
+      "value": "2024-09-26",
+      "precision": "day",
+      "basis": "electronic_publication"
+     },
+     "abstract": "BACKGROUND: Randomized controlled trials have confirmed the effectiveness of four prevalent caloric restriction regimens in reducing obesity-related health risks. However, there is no consensus on the optimal regimen for weight management in adults. METHODS: We systematically searched PubMed, Embase, Web of Science, and Cochrane CENTRAL up to January 15, 2024, for randomized controlled trials (RCT) involving adults, evaluating the weight-loss effects of alternate day fasting (ADF), short-term fasting (STF), time-restricted eating (TRE), and continuous energy restriction (CER). The primary outc..."
+    }
+   }
+  ],
+  "same_paper": []
+ },
+ "heatpump": {
+  "question": "Do domestic heat pumps reduce heating-related CO2 emissions compared with gas boilers in the UK?",
+  "refs": [
+   {
+    "ref": 1,
+    "title": "Gas boiler vs heat pump: Which is right for your home?",
+    "year": 2026,
+    "url": "https://www.independent.co.uk/home-improvement/gas-boiler-vs-heat-pump-which-best-b3063300.html",
+    "pmc": null,
+    "matched": false,
+    "how": null,
+    "title_similarity": null,
+    "paper": null
+   },
+   {
+    "ref": 2,
+    "title": "A Comparative Environmental Assessment of Heat Pumps and Gas Boilers towards a Circular Economy in the UK",
+    "year": 2021,
+    "url": "https://discovery.ucl.ac.uk/id/eprint/10128493/",
+    "pmc": null,
+    "matched": false,
+    "how": null,
+    "title_similarity": null,
+    "paper": null
+   },
+   {
+    "ref": 3,
+    "title": "Comparative assessment of hybrid heat pumps vs gas boilers in the UK",
+    "year": 2021,
+    "url": "https://discovery.ucl.ac.uk/id/eprint/10125484/",
+    "pmc": null,
+    "matched": false,
+    "how": null,
+    "title_similarity": null,
+    "paper": null
+   },
+   {
+    "ref": 4,
+    "title": "Life cycle environmental impacts and potential implications for the UK",
+    "year": 2026,
+    "url": "https://research.manchester.ac.uk/en/publications/domestic-heat-pumps-life-cycle-environmental-impacts-and-potentia/",
+    "pmc": null,
+    "matched": false,
+    "how": null,
+    "title_similarity": null,
+    "paper": null
+   },
+   {
+    "ref": 5,
+    "title": "The running cost of heat pumps",
+    "year": 2025,
+    "url": "https://housingevidence.ac.uk/wp-content/uploads/2024/03/The-running-cost-of-heat-pumps-v7.pdf",
+    "pmc": null,
+    "matched": false,
+    "how": null,
+    "title_similarity": null,
+    "paper": null
+   },
+   {
+    "ref": 6,
+    "title": "Analysis: UK’s electricity was cleanest ever in 2024",
+    "year": 2025,
+    "url": "https://www.carbonbrief.org/analysis-uks-electricity-was-cleanest-ever-in-2024",
+    "pmc": null,
+    "matched": false,
+    "how": null,
+    "title_similarity": null,
+    "paper": null
+   }
+  ],
+  "same_paper": []
+ },
+ "melatonin": {
+  "question": "Does melatonin improve sleep quality in adults with chronic insomnia?",
+  "refs": [
+   {
+    "ref": 1,
+    "title": "Efficacy of melatonin for chronic insomnia: Systematic review and meta-analysis",
+    "year": 2022,
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1087079222001058",
+    "pmc": null,
+    "matched": true,
+    "how": "title search",
+    "title_similarity": 0.9808917197452229,
+    "paper": {
+     "id": "36179487",
+     "title": "Efficacy of melatonin for chronic insomnia: Systematic reviews and meta-analyses.",
+     "source": "pubmed",
+     "doi": "10.1016/j.smrv.2022.101692",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36179487/",
+     "date": {
+      "value": "2022-09-13",
+      "precision": "day",
+      "basis": "electronic_publication"
+     },
+     "abstract": "We conducted systematic reviews and meta-analyses to evaluate the efficacy of melatonin versus placebo or other hypnotic agents in improving sleep quality and quantity in patients with chronic insomnia. A literature search on Ovid-MEDLINE, EMBASE, and the Cochrane Library was performed up to November 2020. Sleep onset latency, total sleep time, sleep efficiency, sleep quality and quality of life were examined as outcomes. We identified 24 randomized controlled trials of chronic insomnia including four studies of patients with comorbid insomnia. All studies were compared with placebo. Due to he..."
+    }
+   },
+   {
+    "ref": 2,
+    "title": "A Systematic Review and Network Meta-Analysis of Pharmacological and Nonpharmacological Interventions for the Treatment of Insomnia",
+    "year": 2020,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7356922/",
+    "pmc": "PMC7356922",
+    "matched": true,
+    "how": "pmc id",
+    "title_similarity": 0.48725212464589235,
+    "paper": {
+     "id": "32580450",
+     "title": "A Systematic Review and Network Meta-Analysis of Randomized Controlled Trials Evaluating the Evidence Base of Melatonin, Light Exposure, Exercise, and Complementary and Alternative Medicine for Patients with Insomnia Disorder.",
+     "source": "pubmed",
+     "doi": "10.3390/jcm9061949",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/32580450/",
+     "date": {
+      "value": "2020-06-22",
+      "precision": "day",
+      "basis": "electronic_publication"
+     },
+     "abstract": "Insomnia is a prevalent disorder and it leads to relevant impairment in health-related quality of life. Recent clinical guidelines pointed out that Cognitive-Behavior Therapy for Insomnia (CBT-I) should be considered as first-line intervention. Nevertheless, many other interventions are commonly used by patients or have been proposed as effective for insomnia. These include melatonin, light exposure, exercise, and complementary and alternative medicine. Evaluation of comparable effectiveness of these interventions with first-line intervention for insomnia is however still lacking. We conducted..."
+    }
+   },
+   {
+    "ref": 3,
+    "title": "Meta-Analysis: Melatonin for the Treatment of Primary Sleep Disorders",
+    "year": 2013,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3656905/",
+    "pmc": "PMC3656905",
+    "matched": true,
+    "how": "pmc id",
+    "title_similarity": 1.0,
+    "paper": {
+     "id": "23691095",
+     "title": "Meta-analysis: melatonin for the treatment of primary sleep disorders.",
+     "source": "pubmed",
+     "doi": "10.1371/journal.pone.0063773",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/23691095/",
+     "date": {
+      "start": "2013-01-01",
+      "end": "2013-05-17",
+      "precision": "range",
+      "basis": "combined_evidence"
+     },
+     "abstract": "STUDY OBJECTIVES: To investigate the efficacy of melatonin compared to placebo in improving sleep parameters in patients with primary sleep disorders. DESIGN: PubMed was searched for randomized, placebo-controlled trials examining the effects of melatonin for the treatment of primary sleep disorders. Primary outcomes examined were improvement in sleep latency, sleep quality and total sleep time. Meta-regression was performed to examine the influence of dose and duration of melatonin on reported efficacy. PARTICIPANTS: Adults and children diagnosed with primary sleep disorders. INTERVENTIONS: M..."
+    }
+   },
+   {
+    "ref": 4,
+    "title": "Effect of melatonin supplementation on sleep quality: a systematic review and meta-analysis of randomized controlled trials",
+    "year": 2021,
+    "url": "https://link.springer.com/article/10.1007/s00415-020-10381-w",
+    "pmc": null,
+    "matched": true,
+    "how": "title search",
+    "title_similarity": 1.0,
+    "paper": {
+     "id": "33417003",
+     "title": "Effect of melatonin supplementation on sleep quality: a systematic review and meta-analysis of randomized controlled trials.",
+     "source": "pubmed",
+     "doi": "10.1007/s00415-020-10381-w",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/33417003/",
+     "date": {
+      "value": "2021-01-08",
+      "precision": "day",
+      "basis": "electronic_publication"
+     },
+     "abstract": "BACKGROUND: The Present study was conducted to systematically review the effect of the melatonin on sleep quality. We summarized evidence from randomized clinical trials (RCTs) that investigated the effects of melatonin on sleep quality as assessed by the Pittsburgh Sleep Quality Index (PSQI) in adults with various diseases. METHODS: The literature searches of English publications in MEDLINE and EMBASE databases were performed up June 2020. Results were summarized as mean differences (MD) with 95% confidence intervals (CI) using random effects model (DerSimonian-Laird method). Heterogeneity am..."
+    }
+   },
+   {
+    "ref": 5,
+    "title": "Use of Melatonin and/or Ramelteon for the Treatment of Insomnia in Older Adults: A Systematic Review and Meta-Analysis",
+    "year": 2022,
+    "url": "https://www.mdpi.com/2077-0383/11/17/5138",
+    "pmc": null,
+    "matched": true,
+    "how": "title search",
+    "title_similarity": 0.9914529914529915,
+    "paper": {
+     "id": "36079069",
+     "title": "Use of Melatonin and/on Ramelteon for the Treatment of Insomnia in Older Adults: A Systematic Review and Meta-Analysis.",
+     "source": "pubmed",
+     "doi": "10.3390/jcm11175138",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/36079069/",
+     "date": {
+      "value": "2022-08-31",
+      "precision": "day",
+      "basis": "electronic_publication"
+     },
+     "abstract": "To investigate the efficacy of melatonin and/or ramelteon reporting sleep outcomes for older adults with chronic insomnia, a systematic review and a meta-analysis of PubMed, EMBASE, Cochrane library, International Pharmaceutical Abstracts, PsycINFO, science citation index, center for reviews and dissemination, CINAHL, grey literature and relevant sleep journal searches were conducted from 1 January 1990 to 20 June 2021. Randomized controlled trials and other comparative studies with melatonin and/or ramelteon use among older patients with chronic insomnia were included. Funnel plot and Egger's..."
+    }
+   },
+   {
+    "ref": 6,
+    "title": "Melatonin to Treat Insomnia in Older Adults",
+    "year": 2021,
+    "url": "https://www.aafp.org/afp/2021/0900/p297",
+    "pmc": null,
+    "matched": true,
+    "how": "title search",
+    "title_similarity": 1.0,
+    "paper": {
+     "id": "34523886",
+     "title": "Melatonin to Treat Insomnia in Older Adults.",
+     "source": "pubmed",
+     "doi": "",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/34523886/",
+     "date": {
+      "value": "2021-09-01",
+      "precision": "day",
+      "basis": "journal_issue"
+     },
+     "abstract": ""
+    }
+   },
+   {
+    "ref": 7,
+    "title": "Clinical Practice Guideline for the Pharmacologic Treatment of Chronic Insomnia in Adults",
+    "year": 2017,
+    "url": "https://aasm.org/resources/pdf/pharmacologictreatmentofinsomnia.pdf",
+    "pmc": null,
+    "matched": false,
+    "how": null,
+    "title_similarity": null,
+    "paper": null
+   },
+   {
+    "ref": 8,
+    "title": "Sleep Disorders and Complementary Health Approaches: Usefulness and Safety",
+    "year": 2026,
+    "url": "https://www.nccih.nih.gov/health/sleep-disorders-and-complementary-health-approaches",
+    "pmc": null,
+    "matched": false,
+    "how": null,
+    "title_similarity": null,
+    "paper": null
+   }
+  ],
+  "same_paper": []
+ }
+}

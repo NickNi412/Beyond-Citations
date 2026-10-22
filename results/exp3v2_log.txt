@@ -1,0 +1,11 @@
+=== 实验 3 修订版日志 开始 2026-10-19 17:10:46 ===
+更新：按第 4 轮说明只复制 exp3/、paper/、HANDOFF；新包中 data/、results/、exp2/、exp1/pool.py 不在清单内，未复制。.env.txt、results/、data/、evaudit/ 保留。旧文件（含旧 data/exp3/items.jsonl）已备份。
+改名：results/exp3.jsonl -> results/exp3_v1.jsonl（未删除）。
+[17:11:11] 第0步 测试: Ran 24 tests in 13.439s  OK 
+生成 72 道题；含 separate 的 36 道题 Evidence 部分出现旧代号次数: 0；与新包自带 items.jsonl 内容一致: True
+[17:11:19] [第0步完成]
+[17:11:30] 第1步 干跑: 864 calls; ~0.37M input tokens, output ~0.22M。按单价估计约 $1.4（上轮实际约为估计的 70%）；当前余额 $4.43。[第1步完成]
+[17:13:38] 第2步 试跑 4 题（48 次调用，约 $0.08）：12 组模型×任务 JSON 解析均 4/4；分析层面 valid 除 Haiku direct 为 3/4 外均 4/4（未超一半，继续）。最长回答 353 token（上限 1500）。试跑摘要另存 results/exp3v2_trial4_summary.txt。[第2步完成]
+[17:13:46] 第3步 全量开始 (--workers 4)
+[17:31:33] 第3步 第1次运行 (workers 4): 最后一行可解析 864/864，文件 864 行，最后一行仍为报错 0，累计花费 $1.032
+[17:31:54] 第3步 一次跑完：864/864 可解析，无报错、无需重跑，累计花费约 $1.03。分析完成 -> results/exp3v2_summary.txt, results/exp3v2_summary.json。交还文件含 key 的数量: 0。=== 实验 3 修订版完成 ===

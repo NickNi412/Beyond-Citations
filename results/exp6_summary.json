@@ -1,0 +1,33 @@
+{
+ "qwen/qwen3-235b-a22b-thinking-2507": {
+  "direct_ex": {
+   "n_items": 72,
+   "n_valid": 71,
+   "parse_fail": 1,
+   "bottleneck": 66,
+   "certs": 66,
+   "by_variant": {
+    "shared_same": {
+     "n": 18,
+     "certs": 18,
+     "bottleneck": 18
+    },
+    "shared_para": {
+     "n": 18,
+     "certs": 12,
+     "bottleneck": 12
+    },
+    "separate_diss": {
+     "n": 18,
+     "certs": 18,
+     "bottleneck": 18
+    },
+    "separate_sim": {
+     "n": 18,
+     "certs": 18,
+     "bottleneck": 18
+    }
+   }
+  }
+ }
+}

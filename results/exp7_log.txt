@@ -1,0 +1,173 @@
+=== Round 7 (Bond) 日志 开始 2026-10-21 21:55:36 ===
+--- 离线自检 ---
+$ py -m exp7.link resolve --mock
+  melatonin ref 5: MATCH title search (title similarity 0.97)
+  melatonin ref 6: MATCH title search (title similarity 1.00)
+  melatonin ref 7: MATCH title search (title similarity 1.00)
+  melatonin ref 8: MATCH title search (title similarity 0.96)
+  resolved 32/33 references -> results\exp7_resolve_mock.json
+  (退出码 0)
+$ py -m exp7.link evidence --mock
+  vitd      claude-haiku-4.5       U1   good_match: 2 papers, 0 already cited
+  vitd      gpt-4.1                C1   good_match: 2 papers, 0 already cited
+  vitd      gpt-4.1                U1   good_match: 2 papers, 0 already cited
+  vitd      qwen3-235b-a22b-2507   U1   good_match: 2 papers, 0 already cited
+  -> results\exp7_evidence_mock.json
+  (退出码 0)
+$ py -m exp7.link render --mock
+  -> results\exp7_bond_cards_mock.md
+  (退出码 0)
+模拟文件: results/exp7_bond_cards_mock.md results/exp7_evidence_mock.json results/exp7_resolve_mock.json 
+离线自检通过；模拟文件已删除。引用总数为 33（说明写约 35，因 6 篇报告为上次重跑版本：4+5+5+5+6+8）。
+--- 正式运行 ---
+[21:56:53] 第一次 resolve 已跑完 33 条，但保存时 UnicodeEncodeError（GBK 无法编码 \xa0），未写出文件；改为设置 PYTHONUTF8=1 重跑（不改代码）。
+$ py -m exp7.link resolve --env-file .env.txt
+  vitd      ref 1: MATCH title search (title similarity 1.00)
+  vitd      ref 2: not found
+  vitd      ref 3: MATCH pmc id (title similarity 0.93)
+  vitd      ref 4: MATCH title search (title similarity 1.00)
+  creatine  ref 1: MATCH title search (title similarity 1.00)
+  creatine  ref 2: MATCH pmc id (title similarity 0.74)
+  creatine  ref 3: MATCH pmc id (title similarity 0.85)
+  creatine  ref 4: MATCH title search (title similarity 0.91)
+  creatine  ref 5: MATCH pmc id (title similarity 1.00)
+  lfp       ref 1: not found
+  lfp       ref 2: not found
+  lfp       ref 3: not found
+  lfp       ref 4: not found
+  lfp       ref 5: not found
+  fasting   ref 1: not found
+  fasting   ref 2: MATCH pmc id (title similarity 0.07)
+  fasting   ref 3: not found
+  fasting   ref 4: not found
+  fasting   ref 5: MATCH pmc id (title similarity 0.25)
+  heatpump  ref 1: not found
+  heatpump  ref 2: not found
+  heatpump  ref 3: not found
+  heatpump  ref 4: not found
+  heatpump  ref 5: not found
+  heatpump  ref 6: not found
+  melatonin ref 1: MATCH title search (title similarity 0.98)
+  melatonin ref 2: MATCH pmc id (title similarity 0.49)
+  melatonin ref 3: MATCH pmc id (title similarity 1.00)
+  melatonin ref 4: MATCH title search (title similarity 1.00)
+  melatonin ref 5: MATCH title search (title similarity 0.99)
+  melatonin ref 6: MATCH title search (title similarity 1.00)
+  melatonin ref 7: not found
+  melatonin ref 8: not found
+  resolved 16/33 references -> results\exp7_resolve.json
+$ py -m exp7.link evidence --env-file .env.txt
+  creatine  gpt-4.1                C1   ambiguous_match: 5 papers, 1 already cited
+  creatine  gpt-4.1                C2   ambiguous_match: 5 papers, 0 already cited
+  creatine  gpt-4.1                C3   good_match: 5 papers, 1 already cited
+  creatine  gpt-4.1                C4   good_match: 5 papers, 1 already cited
+  creatine  qwen3-235b-a22b-2507   U1   good_match: 5 papers, 0 already cited
+  fasting   claude-haiku-4.5       U1   high_confidence_match: 5 papers, 1 already cited
+  fasting   gpt-4.1                C1   ambiguous_match: 5 papers, 1 already cited
+  fasting   gpt-4.1                C2   good_match: 5 papers, 0 already cited
+  fasting   gpt-4.1                C3   good_match: 5 papers, 0 already cited
+  fasting   gpt-4.1                C4   ambiguous_match: 5 papers, 0 already cited
+  fasting   gpt-4.1                U1   good_match: 5 papers, 1 already cited
+  fasting   qwen3-235b-a22b-2507   U1   ambiguous_match: 5 papers, 0 already cited
+  fasting   qwen3-235b-a22b-2507   U2   ambiguous_match: 5 papers, 0 already cited
+  heatpump  gpt-4.1                C3   ambiguous_match: 5 papers, 0 already cited
+  heatpump  gpt-4.1                C5   ambiguous_match: 5 papers, 0 already cited
+  heatpump  gpt-4.1                U1   good_match: 5 papers, 0 already cited
+  heatpump  qwen3-235b-a22b-2507   C6   good_match: 5 papers, 0 already cited
+  lfp       gpt-4.1                C3   ambiguous_match: 5 papers, 0 already cited
+  lfp       gpt-4.1                C4   ambiguous_match: 5 papers, 0 already cited
+  lfp       qwen3-235b-a22b-2507   U3   ambiguous_match: 5 papers, 0 already cited
+  melatonin claude-haiku-4.5       U1   ambiguous_match: 5 papers, 1 already cited
+  melatonin gpt-4.1                C1   good_match: 5 papers, 2 already cited
+  melatonin gpt-4.1                C2   ambiguous_match: 5 papers, 2 already cited
+  melatonin gpt-4.1                C5   good_match: 5 papers, 1 already cited
+  melatonin gpt-4.1                U1   good_match: 5 papers, 1 already cited
+  vitd      claude-haiku-4.5       U1   good_match: 5 papers, 2 already cited
+  vitd      gpt-4.1                C1   ambiguous_match: 5 papers, 2 already cited
+  vitd      gpt-4.1                U1   ambiguous_match: 5 papers, 2 already cited
+  vitd      qwen3-235b-a22b-2507   U1   ambiguous_match: 5 papers, 2 already cited
+  -> results\exp7_evidence.json
+$ py -m exp7.link render
+  -> results\exp7_bond_cards.md
+[汇总] resolve: 16/33 条引用匹配到索引论文；各报告: vitd 3/4, creatine 5/5, lfp 0/5, fasting 2/5, heatpump 0/6, melatonin 6/8
+  同一论文被多次引用: 无
+  evidence: 29 次语义检索（单点前提），匹配置信度 {'ambiguous_match': 16, 'good_match': 12, 'high_confidence_match': 1}；无 failed
+  需重点抽查（按 PMC 号匹配、但标题相似度 < 0.8，可能是报告里的 PMC 链接与所写标题不对应）:
+    creatine ref 2 (相似度 0.74): 报告写「Effect of Creatine Supplementation on Kidney Function」 / 索引论文「Effect of creatine supplementation on kidney function: a systematic re」
+    fasting ref 2 (相似度 0.07): 报告写「Obesity」 / 索引论文「Is Fasting Superior to Continuous Caloric Restriction for Weight Loss 」
+    fasting ref 5 (相似度 0.25): 报告写「International Journal of Behavioral Nutrition and Physical Activity」 / 索引论文「Comparing caloric restriction regimens for effective weight management」
+    melatonin ref 2 (相似度 0.49): 报告写「A Systematic Review and Network Meta-Analysis of Pharmacological and N」 / 索引论文「A Systematic Review and Network Meta-Analysis of Randomized Controlled」
+
+=== 重跑（2026-10-22 00:34:10）：link.py 已于 22:02 更新（标题解析改为优先取引号内标题）；旧结果与旧日志已备份到 results/_old_exp7/ ===
+$ py -m exp7.link resolve --env-file .env.txt
+  vitd      ref 1: MATCH title search (title similarity 1.00)
+  vitd      ref 2: not found
+  vitd      ref 3: MATCH pmc id (title similarity 0.93)
+  vitd      ref 4: MATCH title search (title similarity 1.00)
+  creatine  ref 1: MATCH title search (title similarity 1.00)
+  creatine  ref 2: MATCH pmc id (title similarity 0.74)
+  creatine  ref 3: MATCH pmc id (title similarity 0.85)
+  creatine  ref 4: MATCH title search (title similarity 0.91)
+  creatine  ref 5: MATCH pmc id (title similarity 1.00)
+  lfp       ref 1: not found
+  lfp       ref 2: not found
+  lfp       ref 3: not found
+  lfp       ref 4: not found
+  lfp       ref 5: not found
+  fasting   ref 1: MATCH title search (title similarity 1.00)
+  fasting   ref 2: MATCH pmc id (title similarity 1.00)
+  fasting   ref 3: MATCH title search (title similarity 1.00)
+  fasting   ref 4: MATCH title search (title similarity 1.00)
+  fasting   ref 5: MATCH pmc id (title similarity 1.00)
+  heatpump  ref 1: not found
+  heatpump  ref 2: not found
+  heatpump  ref 3: not found
+  heatpump  ref 4: not found
+  heatpump  ref 5: not found
+  heatpump  ref 6: not found
+  melatonin ref 1: MATCH title search (title similarity 0.98)
+  melatonin ref 2: MATCH pmc id (title similarity 0.49)
+  melatonin ref 3: MATCH pmc id (title similarity 1.00)
+  melatonin ref 4: MATCH title search (title similarity 1.00)
+  melatonin ref 5: MATCH title search (title similarity 0.99)
+  melatonin ref 6: MATCH title search (title similarity 1.00)
+  melatonin ref 7: not found
+  melatonin ref 8: not found
+  resolved 19/33 references -> results\exp7_resolve.json
+$ py -m exp7.link evidence --env-file .env.txt
+  creatine  gpt-4.1                C1   ambiguous_match: 5 papers, 1 already cited
+  creatine  gpt-4.1                C2   ambiguous_match: 5 papers, 0 already cited
+  creatine  gpt-4.1                C3   good_match: 5 papers, 1 already cited
+  creatine  gpt-4.1                C4   good_match: 5 papers, 1 already cited
+  creatine  qwen3-235b-a22b-2507   U1   good_match: 5 papers, 0 already cited
+  fasting   claude-haiku-4.5       U1   high_confidence_match: 5 papers, 1 already cited
+  fasting   gpt-4.1                C1   ambiguous_match: 5 papers, 1 already cited
+  fasting   gpt-4.1                C2   good_match: 5 papers, 1 already cited
+  fasting   gpt-4.1                C3   good_match: 5 papers, 1 already cited
+  fasting   gpt-4.1                C4   ambiguous_match: 5 papers, 0 already cited
+  fasting   gpt-4.1                U1   good_match: 5 papers, 1 already cited
+  fasting   qwen3-235b-a22b-2507   U1   ambiguous_match: 5 papers, 0 already cited
+  fasting   qwen3-235b-a22b-2507   U2   ambiguous_match: 5 papers, 0 already cited
+  heatpump  gpt-4.1                C3   ambiguous_match: 5 papers, 0 already cited
+  heatpump  gpt-4.1                C5   ambiguous_match: 5 papers, 0 already cited
+  heatpump  gpt-4.1                U1   good_match: 5 papers, 0 already cited
+  heatpump  qwen3-235b-a22b-2507   C6   good_match: 5 papers, 0 already cited
+  lfp       gpt-4.1                C3   ambiguous_match: 5 papers, 0 already cited
+  lfp       gpt-4.1                C4   ambiguous_match: 5 papers, 0 already cited
+  lfp       qwen3-235b-a22b-2507   U3   ambiguous_match: 5 papers, 0 already cited
+  melatonin claude-haiku-4.5       U1   ambiguous_match: 5 papers, 1 already cited
+  melatonin gpt-4.1                C1   good_match: 5 papers, 2 already cited
+  melatonin gpt-4.1                C2   ambiguous_match: 5 papers, 2 already cited
+  melatonin gpt-4.1                C5   good_match: 5 papers, 1 already cited
+  melatonin gpt-4.1                U1   good_match: 5 papers, 1 already cited
+  vitd      claude-haiku-4.5       U1   good_match: 5 papers, 2 already cited
+  vitd      gpt-4.1                C1   ambiguous_match: 5 papers, 2 already cited
+  vitd      gpt-4.1                U1   ambiguous_match: 5 papers, 2 already cited
+  vitd      qwen3-235b-a22b-2507   U1   ambiguous_match: 5 papers, 2 already cited
+  -> results\exp7_evidence.json
+$ py -m exp7.link render
+  -> results\exp7_bond_cards.md
+[汇总] resolve 新: vitd 3/4, creatine 5/5, lfp 0/5, fasting 5/5, heatpump 0/6, melatonin 6/8；合计 19/33（旧: 16/33）
+  同一论文被多次引用: 无
+  标题相似度 < 0.8 的匹配: creatine ref 2 (0.74) 「Effect of Creatine Supplementation on Kidney Function」; melatonin ref 2 (0.49) 「A Systematic Review and Network Meta-Analysis of Pharmacolog」
+  evidence: 29 次检索

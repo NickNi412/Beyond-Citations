@@ -1,0 +1,87 @@
+=== 实验 4（第 5 轮重跑）日志 开始 2026-10-20 12:17:52 ===
+磁盘：开始时 C 盘一度显示 0 剩余空间、首次解压报写入错误；随后恢复约 470–530 MB（疑似另一个程序 wait_probe_full.py 在读写磁盘，未动它）。已删除临时目录中自己的旧解压副本，重新解压并通过压缩包完整性校验。
+更新：按说明只复制 exp4/、paper/、HANDOFF；新版 run_exp4.py 相比上一版只改了离线模拟的输出路径与防混入检查，提示词和 topics.json 不变。
+第0步 清理：data/exp4/reports.jsonl、results/exp4_extract.jsonl、results/exp4_cards.md、results/exp4_cards.json 已移到 results/_old_mock_exp4/；旧日志一并移入（exp4_log_previous.txt）。
+  核对发现：这 4 个文件实为上一次真实运行结果（6 份 sonar-pro 报告、0 个 example.org 链接；18 行抽取来自三个真实评审，无 J1）。真正的模拟文件在 results/_mock_exp4/，与真实结果同名，推测是被误交回。已在 _old_mock_exp4/说明_README.txt 注明。
+第0步 测试（本机 tests/，新版 test_theory.py 不在复制清单内故未复制）: Ran 24 tests in 34.650s  OK ；用新版测试文件对本机代码运行: Ran 25 tests in 34.988s  OK 
+第0步 离线试运行实际输出:
+$ py -m exp4.run_exp4 reports --mock --n 1
+  vitd 530 chars
+$ py -m exp4.run_exp4 extract --mock --models J1
+  vitd J1 ok
+$ py -m exp4.run_exp4 cards --mock
+  
+  | report | refs | tau_S per judge | bottleneck found per judge |
+  |---|---|---|---|
+  | vitd | 3 | 2 | yes |
+核对: data/exp4/ 内容 = []；results/exp4_cards.md 存在? 否；模拟文件: results/exp4_mock_cards.json results/exp4_mock_cards.md results/exp4_mock_extract.jsonl  data/exp4_mock: reports.jsonl 
+[第0步完成]
+第1步 选模型: results/openrouter_models.txt 中 331 行存在 perplexity/sonar-pro（列表第一个），选用它。开始前余额 $3.181。[第1步完成]
+第2步 $ py -m exp4.run_exp4 reports --model perplexity/sonar-pro --env-file .env.txt --n 1
+  vitd 3956 chars
+  行数 1；id vitd；模型 perplexity/sonar-pro；3956 字符；花费 $0.0188；正文引用编号 [1, 2, 3, 4]；URL 4 个，example.org 0 个
+  前 300 字符: 'Vitamin D supplementation **does not consistently reduce the risk of acute respiratory infections (ARIs) in adults**, although a possible small benefit remains for people with severe vitamin D deficiency or for specific dosing regimens.\n\nEarly evidence was more favorable. An individual-participant-d'
+  参考文献列表:
+    1. *Vitamin D supplementation to prevent acute respiratory tract infections: systematic review and meta-analysis of individual participant data*, Adrian R. Martineau, David A. Jolliffe, Richard L. Hooper et al., 2017, https://www.bmj.com/content/356/bmj.i6583  
+    2. *Optimal methods of vitamin D supplementation to prevent acute respiratory infections: a systematic review and meta-analysis*, authors not fully specified in the retrieved record, 2024, https://link.springer.com/article/10.1186/s12937-024-00990-w  
+    3. *Vitamin D supplementation for prevention of acute respiratory infections: a systematic review and meta-analysis*, authors not fully specified in the retrieved record, 2024, https://pmc.ncbi.nlm.nih.gov/articles/PMC11125479/  
+    4. *Vitamin D supplementation to prevent acute respiratory infections: systematic review and meta-analysis of stratified aggregate data*, authors not fully specified in the retrieved record, 2024, https://www.medrxiv.org/content/10.1101/2024.09.18.24313866v1.full.pdf
+[第2步完成] 报告格式合格（首句结论、[1]-[4] 引用、带真实 URL 的编号参考文献），继续用 perplexity/sonar-pro。
+第3步 $ py -m exp4.run_exp4 reports --model perplexity/sonar-pro --env-file .env.txt
+  creatine 3630 chars
+  lfp 3420 chars
+  fasting 4412 chars
+  heatpump 4491 chars
+  melatonin 4662 chars
+  vitd: perplexity/sonar-pro, 3956 字符, 引用编号 4 个, URL 4 个 (example.org 0), $0.0188
+  creatine: perplexity/sonar-pro, 3630 字符, 引用编号 5 个, URL 5 个 (example.org 0), $0.0175
+  lfp: perplexity/sonar-pro, 3420 字符, 引用编号 5 个, URL 5 个 (example.org 0), $0.0180
+  fasting: perplexity/sonar-pro, 4412 字符, 引用编号 5 个, URL 5 个 (example.org 0), $0.0194
+  heatpump: perplexity/sonar-pro, 4491 字符, 引用编号 6 个, URL 6 个 (example.org 0), $0.0204
+  melatonin: perplexity/sonar-pro, 4662 字符, 引用编号 8 个, URL 8 个 (example.org 0), $0.0204
+  共 6 行，写报告花费 $0.115
+[第3步完成]
+第4步 第1次 $ py -m exp4.run_exp4 extract --models anthropic/claude-haiku-4.5 openai/gpt-4.1 qwen/qwen3-235b-a22b-2507 --env-file .env.txt --workers 3
+  vitd anthropic/claude-haiku-4.5 ok
+  vitd openai/gpt-4.1 ok
+  vitd qwen/qwen3-235b-a22b-2507 ok
+  creatine anthropic/claude-haiku-4.5 ok
+  creatine openai/gpt-4.1 ok
+  creatine qwen/qwen3-235b-a22b-2507 ok
+  lfp anthropic/claude-haiku-4.5 ok
+  lfp openai/gpt-4.1 ok
+  lfp qwen/qwen3-235b-a22b-2507 ok
+  fasting anthropic/claude-haiku-4.5 ok
+  fasting openai/gpt-4.1 ok
+  fasting qwen/qwen3-235b-a22b-2507 ok
+  heatpump anthropic/claude-haiku-4.5 ok
+  heatpump openai/gpt-4.1 ok
+  heatpump qwen/qwen3-235b-a22b-2507 ok
+  melatonin anthropic/claude-haiku-4.5 ok
+  melatonin openai/gpt-4.1 ok
+  melatonin qwen/qwen3-235b-a22b-2507 ok
+  文件 18 行；18/18 组可解析；模型 {'anthropic/claude-haiku-4.5': 6, 'openai/gpt-4.1': 6, 'qwen/qwen3-235b-a22b-2507': 6}；抽取花费 $0.096
+[第4步完成]
+第5步 $ py -m exp4.run_exp4 cards
+  
+  | report | refs | tau_S per judge | bottleneck found per judge |
+  |---|---|---|---|
+  | vitd | 4 | 2, 1, 4 | yes, yes, yes |
+  | creatine | 5 | 4, 5, 5 | no, yes, yes |
+  | lfp | 5 | 2, 2, 3 | no, yes, yes |
+  | fasting | 5 | 5, 5, 4 | yes, yes, yes |
+  | heatpump | 8 | 4, 3, 4 | no, yes, yes |
+  | melatonin | 8 | 4, 3, 4 | yes, yes, no |
+[第5步完成]
+交还前自查（12:23:47）:
+  [通过] reports.jsonl 行数 = 6 (6)
+  [通过] 报告 id 覆盖 6 个题目 (['creatine', 'fasting', 'heatpump', 'lfp', 'melatonin', 'vitd'])
+  [通过] 报告均为 perplexity/sonar-pro 且非占位文本 
+  [通过] 交还文件中无 example.org 
+  [通过] exp4_extract.jsonl 行数约 18 (18)
+  [通过] 抽取模型均为三个真实评审（无 J1） (['anthropic/claude-haiku-4.5', 'openai/gpt-4.1', 'qwen/qwen3-235b-a22b-2507'])
+  [通过] 18/18 抽取可解析 (18)
+  [通过] 审计卡 18 张均可用、模型无 J1 (18)
+  [通过] cards.md 中不含 J1 标题 
+  [通过] 交还文件不含 API key 
+花费：写报告 $0.115 + 抽取 $0.096 = $0.210；余额 $3.181 -> $2.971。代码未做任何修改。=== 实验 4 完成 ===

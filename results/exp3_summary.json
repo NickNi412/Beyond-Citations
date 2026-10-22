@@ -1,0 +1,209 @@
+{
+ "anthropic/claude-haiku-4.5": {
+  "direct": {
+   "overall": {
+    "bottleneck": 0.9428571428571428,
+    "certs": 0.17142857142857143
+   },
+   "by_variant": {
+    "shared_same": {
+     "bottleneck": 1.0,
+     "certs": 0.5294117647058824
+    },
+    "shared_para": {
+     "bottleneck": 0.7647058823529411,
+     "certs": 0.17647058823529413
+    },
+    "separate_diss": {
+     "bottleneck": 1.0,
+     "certs": 0.0
+    },
+    "separate_sim": {
+     "bottleneck": 1.0,
+     "certs": 0.0
+    }
+   },
+   "n": 70
+  },
+  "extract": {
+   "overall": {
+    "bottleneck": 0.7638888888888888,
+    "certs": 0.6944444444444444,
+    "sharing": 0.6944444444444444
+   },
+   "by_variant": {
+    "shared_same": {
+     "bottleneck": 1.0,
+     "certs": 0.9444444444444444,
+     "sharing": 0.9444444444444444
+    },
+    "shared_para": {
+     "bottleneck": 0.6111111111111112,
+     "certs": 0.3888888888888889,
+     "sharing": 0.3888888888888889
+    },
+    "separate_diss": {
+     "bottleneck": 0.5,
+     "certs": 0.5,
+     "sharing": 0.5
+    },
+    "separate_sim": {
+     "bottleneck": 0.9444444444444444,
+     "certs": 0.9444444444444444,
+     "sharing": 0.9444444444444444
+    }
+   },
+   "n": 72
+  },
+  "mcnemar_bottleneck": {
+   "extract_only": 0,
+   "direct_only": 13,
+   "p": 0.000244140625,
+   "n": 70
+  },
+  "mcnemar_certs": {
+   "extract_only": 38,
+   "direct_only": 1,
+   "p": 1.4551915228366852e-10,
+   "n": 70
+  }
+ },
+ "openai/gpt-4.1": {
+  "direct": {
+   "overall": {
+    "bottleneck": 0.9305555555555556,
+    "certs": 0.0
+   },
+   "by_variant": {
+    "shared_same": {
+     "bottleneck": 0.8888888888888888,
+     "certs": 0.0
+    },
+    "shared_para": {
+     "bottleneck": 0.8333333333333334,
+     "certs": 0.0
+    },
+    "separate_diss": {
+     "bottleneck": 1.0,
+     "certs": 0.0
+    },
+    "separate_sim": {
+     "bottleneck": 1.0,
+     "certs": 0.0
+    }
+   },
+   "n": 72
+  },
+  "extract": {
+   "overall": {
+    "bottleneck": 0.9444444444444444,
+    "certs": 0.9444444444444444,
+    "sharing": 0.9444444444444444
+   },
+   "by_variant": {
+    "shared_same": {
+     "bottleneck": 1.0,
+     "certs": 1.0,
+     "sharing": 1.0
+    },
+    "shared_para": {
+     "bottleneck": 0.7777777777777778,
+     "certs": 0.7777777777777778,
+     "sharing": 0.7777777777777778
+    },
+    "separate_diss": {
+     "bottleneck": 1.0,
+     "certs": 1.0,
+     "sharing": 1.0
+    },
+    "separate_sim": {
+     "bottleneck": 1.0,
+     "certs": 1.0,
+     "sharing": 1.0
+    }
+   },
+   "n": 72
+  },
+  "mcnemar_bottleneck": {
+   "extract_only": 2,
+   "direct_only": 1,
+   "p": 1.0,
+   "n": 72
+  },
+  "mcnemar_certs": {
+   "extract_only": 68,
+   "direct_only": 0,
+   "p": 6.776263578034403e-21,
+   "n": 72
+  }
+ },
+ "qwen/qwen3-235b-a22b-2507": {
+  "direct": {
+   "overall": {
+    "bottleneck": 0.5555555555555556,
+    "certs": 0.1388888888888889
+   },
+   "by_variant": {
+    "shared_same": {
+     "bottleneck": 0.05555555555555555,
+     "certs": 0.05555555555555555
+    },
+    "shared_para": {
+     "bottleneck": 0.16666666666666666,
+     "certs": 0.1111111111111111
+    },
+    "separate_diss": {
+     "bottleneck": 1.0,
+     "certs": 0.2222222222222222
+    },
+    "separate_sim": {
+     "bottleneck": 1.0,
+     "certs": 0.16666666666666666
+    }
+   },
+   "n": 72
+  },
+  "extract": {
+   "overall": {
+    "bottleneck": 0.9166666666666666,
+    "certs": 0.9166666666666666,
+    "sharing": 0.9166666666666666
+   },
+   "by_variant": {
+    "shared_same": {
+     "bottleneck": 1.0,
+     "certs": 1.0,
+     "sharing": 1.0
+    },
+    "shared_para": {
+     "bottleneck": 0.6666666666666666,
+     "certs": 0.6666666666666666,
+     "sharing": 0.6666666666666666
+    },
+    "separate_diss": {
+     "bottleneck": 1.0,
+     "certs": 1.0,
+     "sharing": 1.0
+    },
+    "separate_sim": {
+     "bottleneck": 1.0,
+     "certs": 1.0,
+     "sharing": 1.0
+    }
+   },
+   "n": 72
+  },
+  "mcnemar_bottleneck": {
+   "extract_only": 27,
+   "direct_only": 1,
+   "p": 2.1606683731079102e-07,
+   "n": 72
+  },
+  "mcnemar_certs": {
+   "extract_only": 57,
+   "direct_only": 1,
+   "p": 4.0939474033052647e-16,
+   "n": 72
+  }
+ }
+}

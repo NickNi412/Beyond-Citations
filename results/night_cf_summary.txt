@@ -1,0 +1,47 @@
+rows 2880, parse failures 2
+
+anthropic/claude-haiku-4.5 | aware
+  inflation at kmax: {'independent': 14.1, 'same_source_distinct': 7.5, 'same_source_verbatim': -11.8}
+  discount ratio same_source_distinct: 0.47  (indep - same = 6.6, n=60, p=0.00023795229646252528)
+  discount ratio same_source_verbatim: 1.84  (indep - same = 25.9, n=60, p=2.2718885944278786e-10)
+  D_violation_same_source_verbatim: mean diff -11.8 (n=60, p=1.073216471008686e-07)
+  S_gap: mean diff 6.6 (n=60, p=0.00023795229646252528), share of independent gain 0.47
+  independent-study count == tau: {'single': 0.9916666666666667, 'independent': 0.975, 'same_source_distinct': 0.9833333333333333, 'same_source_verbatim': 1.0}
+
+anthropic/claude-haiku-4.5 | plain
+  inflation at kmax: {'independent': 20.0, 'same_source_distinct': 13.6, 'same_source_verbatim': -8.7}
+  discount ratio same_source_distinct: 0.32  (indep - same = 6.4, n=60, p=0.001068459521596145)
+  discount ratio same_source_verbatim: 1.44  (indep - same = 28.7, n=60, p=1.0690684741970962e-10)
+  D_violation_same_source_verbatim: mean diff -8.7 (n=60, p=1.811651101365629e-05)
+  S_gap: mean diff 6.4 (n=60, p=0.001068459521596145), share of independent gain 0.32
+
+openai/gpt-4.1 | aware
+  inflation at kmax: {'independent': 21.8, 'same_source_distinct': 9.1, 'same_source_verbatim': -9.3}
+  discount ratio same_source_distinct: 0.58  (indep - same = 12.7, n=60, p=5.46481591878148e-09)
+  discount ratio same_source_verbatim: 1.43  (indep - same = 31.1, n=60, p=5.6821671606654945e-11)
+  D_violation_same_source_verbatim: mean diff -9.3 (n=60, p=7.693214105562592e-06)
+  S_gap: mean diff 12.7 (n=60, p=5.46481591878148e-09), share of independent gain 0.58
+  independent-study count == tau: {'single': 1.0, 'independent': 0.95, 'same_source_distinct': 0.9833333333333333, 'same_source_verbatim': 1.0}
+
+openai/gpt-4.1 | plain
+  inflation at kmax: {'independent': 21.0, 'same_source_distinct': 16.3, 'same_source_verbatim': -15.1}
+  discount ratio same_source_distinct: 0.22  (indep - same = 4.7, n=60, p=0.011399531116641815)
+  discount ratio same_source_verbatim: 1.72  (indep - same = 36.1, n=60, p=3.1834388215018364e-11)
+  D_violation_same_source_verbatim: mean diff -15.1 (n=60, p=2.019998109276745e-08)
+  S_gap: mean diff 4.7 (n=60, p=0.011399531116641815), share of independent gain 0.22
+
+qwen/qwen3-235b-a22b-2507 | aware
+  inflation at kmax: {'independent': 16.8, 'same_source_distinct': 12.0, 'same_source_verbatim': 1.2}
+  discount ratio same_source_distinct: 0.29  (indep - same = 4.8, n=60, p=0.004795900737002294)
+  discount ratio same_source_verbatim: 0.93  (indep - same = 15.5, n=60, p=1.2323528692458486e-06)
+  D_violation_same_source_verbatim: mean diff 1.2 (n=60, p=0.7054857610790499)
+  S_gap: mean diff 4.8 (n=60, p=0.004795900737002294), share of independent gain 0.29
+  independent-study count == tau: {'single': 0.9333333333333333, 'independent': 0.9083333333333333, 'same_source_distinct': 1.0, 'same_source_verbatim': 1.0}
+
+qwen/qwen3-235b-a22b-2507 | plain
+  inflation at kmax: {'independent': 19.5, 'same_source_distinct': 14.2, 'same_source_verbatim': -2.5}
+  discount ratio same_source_distinct: 0.27  (indep - same = 5.3, n=60, p=0.0007511288705002865)
+  discount ratio same_source_verbatim: 1.13  (indep - same = 22.0, n=60, p=9.788718827796108e-09)
+  D_violation_same_source_verbatim: mean diff -2.5 (n=60, p=0.5145661890279147)
+  S_gap: mean diff 5.3 (n=60, p=0.0007511288705002865), share of independent gain 0.27
+figure -> results/night_cf.png
